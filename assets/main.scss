@@ -32,3 +32,15 @@ p {
 	text-align: justify;
 	line-height: 30px;
 }
+
+.site-description{
+    text: "From Kiran Sripada";
+    content: text("From Kiran Sripada");
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    float: left;
+    color: #000;
+    text-shadow: 0 0 4px #FFF;
+}
+.site-description { font-size: 10px; font-weight: 150; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }

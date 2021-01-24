@@ -103,6 +103,40 @@ body {font-family: Verdana, sans-serif; margin:0}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 3.5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 </style>
 
 <!-- Slideshow container -->
@@ -204,7 +238,19 @@ function showSlides2(n) {
 <!-- --- -->
 <br>
 <h3>Explore the posts</h3>
-<p float="centre">
+<div class="row"> 
+  <div class="column">
+    <a href="/data-science/"><img src="/assets/stock_images/data_science.png"></a>
+    <a href="/automobiles/"><img src="/assets/stock_images/automobiles.png"></a>
+    <a href="/personal-tech/"><img src="/assets/stock_images/personal_tech.png"></a>
+  </div>
+  <div class="column">
+    <a href="/lorgs/"><img src="/assets/stock_images/lorgs.png"></a>
+    <a href="/wildlife/"><img src="/assets/stock_images/wildlife.png"></a>
+    <a href="/posts/"><img src="/assets/stock_images/browse_all.png"></a>
+  </div> 
+</div>
+<!-- <p float="centre">
   <a href="/data-science/"><img src="/assets/stock_images/data_science.png" width="367" height="166" hspace="0.75" object-fit="contain"/></a>
   <a href="/indian-railways/"><img src="/assets/stock_images/indian_railways.png" width="367" height="166" hspace="0" object-fit="contain"/></a>
 </p>
@@ -215,5 +261,5 @@ function showSlides2(n) {
 <p float="centre">
   <a href="/automobiles/"><img src="/assets/stock_images/automobiles.png" width="367" height="166" hspace="0.75"/></a>
   <a href="/posts/"><img src="/assets/stock_images/browse_all.png" width="367" height="166" hspace="0"/></a> 
-</p>
+</p> -->
 

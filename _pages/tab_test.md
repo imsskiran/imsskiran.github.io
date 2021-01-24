@@ -3,7 +3,7 @@ layout: page
 permalink: /tab-test/
 ---
 
-<style>
+<!-- <style>
 /*body {font-family: Arial;}*/
 
 /* Style the tab */
@@ -85,4 +85,55 @@ permalink: /tab-test/
  <p>A time-series is classified as lumpy if the ADI > 1.32 and CV<sup>2</sup> > 0.49. These are the time-series with bad attendance and relatively high variance making it extremely difficult and sometimes nearly impossible for forecasting techniques to produce reliable forecasts. An example of a lumpy time-series is <-lumpy-> visualised in the plot below:</p>
 </div>
 
-<script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script> -->
+
+<style type="text/css">
+	.row {
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+
+	/* Create four equal columns that sits next to each other */
+	.column {
+	  flex: 25%;
+	  max-width: 50%;
+	  padding: 0 4px;
+	}
+
+	.column img {
+	  margin-top: 8px;
+	  vertical-align: middle;
+	  width: 100%;
+	}
+
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	@media screen and (max-width: 800px) {
+	  .column {
+	    flex: 100%;
+	    max-width: 50%;
+	  }
+	}
+
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .column {
+	    flex: 100%;
+	    max-width: 100%;
+	  }
+	}
+</style>
+
+
+<div class="row"> 
+  <div class="column">
+    <img src="/assets/stock_images/data_science.png">
+    <img src="/assets/stock_images/automobiles.png">
+    <img src="/assets/stock_images/personal_tech.png">
+  </div>
+  <div class="column">
+    <img src="/assets/stock_images/indian_railways.png">
+    <img src="/assets/stock_images/wildlife.png">
+    <img src="/assets/stock_images/browse_all.png">
+  </div> 
+</div>
