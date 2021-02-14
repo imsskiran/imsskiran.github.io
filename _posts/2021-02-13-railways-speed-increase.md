@@ -1,27 +1,57 @@
 ---
 layout: post
 permalink: /lorgs/increasing-the-operational-speed-on-a-68000-km-railway-network/
-title: "Increasing the operational speed on a 68000 km railway network"
+title: "'Semi-high speed rail network' - How the Indian Railways is making their age-old dream a reality"
 date:   2021-02-13 12:00:00 +0530
 categories: lorgs
 ---
 
-<h3>Premise</h3>
-There is a saying that time is money. In the transportaion industry, this saying cannot be more appropriate. If you are paid to transport objects or people between two fixed points, the faster you do it the higher will be the revenue, as there will be more time available for doing additional trips. And if you are a monopoly operating on a network spanning 68000 kilometres, even a marginal increase in speed can result in disproportionate increase in revenues. 
+<h2>Preamble</h2>
+There is a saying that time is money. In the transportaion industry, this cannot be more appropriate. If you are paid to transport objects or people between two fixed points, the faster you do it the higher will be your revenue, as you will find more time available for doing additional trips. And if you are a monopoly operating on a network spanning 68000 kilometres, even a marginal increase in speed can result in disproportionate increase in revenues. 
 
-Citing the same reason for many years now, the Indian government has been putting forth the proposal to upgrade the operational speed on the Indian rail network. However, to a multitude of factors which include the enormous scale as well as the lack of intent, the proposals never gained much traction. But from the mid 2010s, this has changed, so much so that, solving this problem now looks more realistic than ever. In this post, let's discuss how the masterminds at Indian Railways are finally solving this problem with a realistic roadmap and serious committment.
+Citing the same reason for many years now, the Indian government has been putting forth the proposal to upgrade the operational speed on the Indian rail network. However, due to a multitude of factors which include the enormous scale as well as the lack of intent, the proposals never gained much traction. But from the mid 2010s, this has changed, so much so that, solving this problem now looks more realistic than ever. In this post, we will discuss how the masterminds at Indian Railways are finally solving this problem with a realistic roadmap and serious conviction.
 
 The current operational speed is a maximum of 110 kmph which further reduces at locations with unstable terrains. But the existing rail network is capable of operational speeds upto 160 kmph. So, what's stopping the railways from operating at 160 kmph?
 
-<h4>Safety</h4>
+<h3>Safety</h3>
+---
+<br>
 As the Indian Railways is one of the major mass transportaion systems in the country, safety must remain a superior priority. The number of accidents within the current operational spectrum is quite alarming. So, increasing the speed will most likely lead to a higher number of disasters.
 
 The masterminds identified the following major roadblocks against achieving better operational safety:
 * Human and animal trespassing on the tracks
-* Presence of level crossings with roads with no supervision on traffic movement at many places
+* Presence of level crossings with roads having no supervision on traffic movement at many places
 * Obsolete and incapable operational equipment such as the locomotives, rolling stock and control (signal) systems
 
-Solving all these problems requires enormous amount of capital investment which the Railways, being a government enterprise cannot afford. So they have been targetting these problems in a phased manner spanning many years.
+Solving all these problems requires enormous amount of capital investment which is unaffordable the Railways as it is a government enterprise. Moreover, if they cannot maintain desirable travel safety with the present standard operating procedure, how could they do so by increasing the speed further? Therefore, safety is the achievement of the hour and they have done that exactly. The following stats quantify their efforts:
+
+Having found some consistency in maitaining travel safety, they are gradually inching towards their goal by tackling the roadblocks in the following manner:
 
 <h4>Avoid Trespassing</h4>
 Since the inception, the railways has been investing in initiatives to promote the hazards of trespassing on the railway tracks. They even came up with laws and penalties against the same. But with a population of 1.3 billion and with the network laid over a rich biodiversity, trespassing is never eliminated entirely. In the event of a collision, the change in momentum can derail the train putting many lives at risk. Even in cases of minor collisions, the network can be blocked for several hours causing significant loss in revenue. So, the railways have decided to fence its entire 68000 km network - a rather old-school but viable option. But to construct and maintain will still remain as a significant challenge for years to come.
+
+<h4>Eliminate level crossings</h4>
+The elimination of unmanned level crossings has contributed towards improved safety to an extent. But the railways have realised that the removal of level crossings once and for all is the way forward to achieve safety with enhanced speed. For several years, railways have been constructing overpasses and underpasses at busier intersections. But from 2015, they swicthed gears in terms of conversion of level crossings which is shown by the following stats:
+
+The cherry on the cake though is one such underpass construction, which was finished in a record time of 4 days as it was meant to happen at one of the busier sections in the railway network:
+
+<h4>Modernisation of operational equipment</h4>
+This is the most important and the hardest challenge that the Indian Railways has been fighting hard by investing heavily on technology and innovation. In a nutshell, speed is generated by the locomotives, speed has to be sustained by the rolling stock & the rails and speed is managed by the communication systems such as signalling. But do the railways possess capable equipment to attain the speed? The answer is "Not enough!"
+
+Indian railways produces the locomotives and rolling stock on its own and it does possess semi-high speed capable equipment since 1995 but in miserably low numbers until mid-2010s. 
+
+The locomotives below are known as WAP-5 and WAP-7 respectively which can comfortably pull a 20 (and 24) coach passenger train at speeds upto 200 kmph. 
+
+These locomotives first entered the Indian Railways in 1995 (and 2001) and the table below provides the number of WAP-5/ WAP-7 locomotives in service over the years:
+
+So how is the railways managing to produce drastically higher number of units since 2011? 
+
+Indian Railways has a mix of electric locomotives powered by diesel and electricity. As of 2020, none of the diesel class of locomotives achieved a higher carrying capacity than WAP-7. For this reason and the added advantage of reduction in its carbon footprint, the railways has decided to electrify its entire network (and is well on its way to meet the deadline in 2023) and increased the production of electric WAP-7 locmotives dramatically, even at production centers meant to produce diesel-electric locomotives.
+
+And for freight trains, they came up with WAG-12 and WAG-11 class of locomotives with monstrous power of upto 12000 HP. This a testimony of Indian Railways investment in green technology, as it joins the elite group of 6 nations in the entire world to have ever produced a 10000 HP+ locomotive.
+
+<h4>Rolling Stock</h4>
+Indian Railways have first inducted the Linke-Holfmann Busch (LHB) class of coaches in 2000. These coaches provide enhanced travel safety and more importantly they are flip resistant in the event of disaster. Flipping of coaches during accidents was found to be making the disasters more deadlier. But LHB coaches are significantly expensive to produce and for several years, these coaches were used only in premium trains due to low numbers of production.
+
+Somehow by 2018, the railways cracked the code for mass production and decided to produce only the LHB coaches thereafter at all facilities, a welcome change towards enhanced speed and safety. Theoritically, LHB coaches can be tuned to attain speeds of up to 200 kmph. But the non-air conditioned class of coaches form signifcant portion of most Indian trains. These non-AC coaches have windows with open vents for air circulation that provide significant risks when operated at higher speeds. It seemed impossible to strip all non-AC coaches until September 2020, when IR came with a game-changing design of an air-conditioned coach with similar dimensions having enhanced capacity making up for the loss in revenue with reduction in fare. The railways is going to bet on the increased spending power of Indians to adapt to the AC class of travel in the future. 
+
