@@ -7,9 +7,9 @@ categories: lorgs
 ---
 
 <h2>Preamble</h2>
-There is a saying that time is money. In the transportaion industry, this cannot be more appropriate. If you are paid to transport objects or people between two fixed points, the faster you do it the higher will be your revenue, as you will find more time available for doing additional trips. And if you are a monopoly operating on a network spanning 68000 kilometres, even a marginal increase in speed can result in disproportionate increase in revenues. 
+There is a saying that time is money. In the transportaion industry, this cannot be more appropriate. If you are paid to transport objects or people between two fixed points, the faster you do it the higher will be your revenue, as you will find more time for doing additional trips. And if you are a monopoly operating on a network spanning 68000 kilometres, even a marginal increase in speed can result in disproportionate increase in revenues. 
 
-Citing the same reason for many years now, the Indian government has been putting forth the proposal to upgrade the operational speed on the Indian rail network. However, due to a multitude of factors which include the enormous scale as well as the lack of intent, the proposals never gained much traction. But from the mid 2010s, this has changed, so much so that, solving this problem now looks more realistic than ever. In this post, we will discuss how the masterminds at Indian Railways are finally solving this problem with a realistic roadmap and serious conviction.
+Citing the same reason for many years now, the Indian government has been putting forth the proposal to upgrade the operational speed on the Indian rail network. However, due to a multitude of factors which include the enormous scale of the project, the proposals never gained much traction. But from the mid 2010s, things have changed, so much so that, solving this problem now looks more realistic than ever. In this post, we will discuss how the masterminds at Indian Railways are finally solving this problem with a realistic roadmap and serious conviction.
 
 The current operational speed is a maximum of 110 kmph which further reduces at locations with unstable terrains. But the existing rail network is capable of operational speeds upto 160 kmph. So, what's stopping the railways from operating at 160 kmph?
 
