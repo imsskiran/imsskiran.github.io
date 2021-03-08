@@ -4,6 +4,7 @@ permalink: /time-series/forecasting-at-scale/
 title: "Forecasting at Scale"
 date:   2020-12-29 13:34:00 +0530
 categories: time-series
+published: false
 ---
 
 <style>
@@ -14,7 +15,7 @@ categories: time-series
   overflow: hidden;
   border: 0px solid #ccc;
   background-color: #f1f1f1;
-  width: 723px;
+  /*width: 723px;*/
 }
 
 /* Style the buttons inside the tab */

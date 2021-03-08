@@ -17,17 +17,17 @@ Edward is searching to find that seamless hack, which does not ask him to make (
 <object data="/assets/RYFB.pdf" width="750" height="800" type='application/pdf'></object>
 
 <h3>Epilogue</h3>
-After reading the book, you might be wholly or partially motivated to try measurement. Here is the summary of peoples experiences who tried the hack:
+After reading the book, you might be wholly or partially motivated to try measurement. Here is the summary of the author's experience after trying the hack:
 
-<h4>The author (mid 20s):</h4>
+<!-- <h4>The author (mid 20s):</h4> -->
 The author has been able to spend time on his hobby, learning and additional outdoor tasks on `measured 83%` of days during an experimental streak of 100 days of measurement. He produced this book and blog by spending time during the hobby slot. He simultaneously managed to finish 3 online courses by spending time during the learning slot. He has been able to achieve this productivity without diverting his time and attention from work and family. 
 
-<h4>The peer of author (late 30s):</h4>
+<!-- <h4>The peer of author (late 30s):</h4>
 The peer of author is a working professional who is parallely pursuing her PhD. She states that she has been finding better balance between work and PhD upon trying measurement and that she has also implemented measurement in her work to achieve efficiency in handling multiple projects simultaneously.
 
 <h4>The second peer of author (late 20s):</h4>
 The second peer of author, a working professional who was also applying for admission into Masters programmes abroad managed to spend quality time on work as well as preparation without giving up on either. He also states that he has been having improved work-life balance later on upon continued implemention of the methods of measurement. 
-
+ -->
 Edward thinks life hacks cannot be implemented consistently without truly believing in them. You are not expected to believe in this hack or peoples experiences. If you hypothesise that you can be more productive, measurement is a quick test to prove or disprove your hypothesis in a matter of days and can quantify your belief that you could do more. It helps you gain motivation from within which is required to maintain consistency.
 
 Thanks for reading and have a great day in a measured way!
