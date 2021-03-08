@@ -15,7 +15,7 @@ Data Sapien will have posts on advanced topics from the field of Data Science an
 <br>
 
 <h3> About the founder </h3>
-[Kiran S. Sripada](https://linkedin.com/in/kiran-sripada-5a35b1a5) works as a Data Scientist at American Express and is a graduate from [Indian Institute of Technology Madras](https://www.iitm.ac.in). He is curious to learn the rationale behind the conceptulisation of theory along with the theory itself, as he believes doing so will enhance his understanding of theory as well as his ability to apply it in the right situations. For many years, he has been experimenting to simplify technical presentations using analogies and visual imagery.
+[Kiran S. Sripada](https://linkedin.com/in/kiran-sripada-5a35b1a5) works as a Research Scientist at American Express and is a graduate from [Indian Institute of Technology Madras](https://www.iitm.ac.in). He is curious to learn the rationale behind the conceptulisation of theory along with the theory itself, as he believes doing so will enhance his understanding of theory as well as his ability to apply it in the right situations. For many years, he has been experimenting to simplify technical presentations using analogies and visual imagery.
 
 If you are someone who strives for productivity, checkout his book:
 <br>[Running Your First Business](/running-your-first-business/)
