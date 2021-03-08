@@ -156,7 +156,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   <div class="text"><strong>Discover the measurement way of life</strong></div>
 </div></a>
 
-<a href="/time-series/time-series-101/">
+<a href="/time-series/time-series-primer/">
 <div class="mySlides fade">
   <div class="numbertext">New</div>
   <img src="/assets/stock_images/data_science/time-series/time-series-101/thumbnail.png" style="width:100%">
