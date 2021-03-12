@@ -99,10 +99,49 @@ First, a theme song is produced to be the signature music associated to the over
 The theme of a forecasting problem can be defined by answering the following questions:
 <ul>
 	<li>Meaningful history</li>
-	<li>Meaning of zeroes and null values</li>
-	<li>Suitable model validation system</li>
+	<li>Zeroes vs Missing values</li>
+	<li>Suitable validation rule book</li>
 </ul> 
 <br>
+<div class="tab">
+  <button class="tablinks2" onclick="showTabContent2(event, 'History')" id="defaultOpen2">History</button>
+  <button class="tablinks2" onclick="showTabContent2(event, 'Zeroes & Missing values')">Zeroes vs Missing values</button>
+  <button class="tablinks2" onclick="showTabContent2(event, 'Validation')">Validation</button>
+</div>
+
+<div id="History" class="tabcontent2" checked="true">
+  <p>
+  Meaningful history is the amount of historical data suitable and useful for training. It is possible to determine this parameter using grid search. However, given the dynamic nature of most businesses, there can be multiple changepoints in the time-series. Hence the frequency of changepoints needs to be assessed for determining an appropriate start. If there are multiple valid starts to choose from, then grid search can be applied to select one.  
+  <br><br>
+  Let's consider stock-price prediction as an example. The time-series data shall be available for several years, but for most companies, prices before a few quarters into past would not have any relationship with present day prices. The years of data is not useful for training. Another example is prediction of number of customer footprints for a product or a website. The definition of the underlying variable, "customer footprint", can be influenced by business subjectivity that changes with time affecting the nature of time-series. 
+
+ 
+  </p>
+</div>
+
+<div id="Zeroes & Missing values" class="tabcontent2">
+  <p>
+  The rationale behind presence of missing values needs to be investigated to decide on the right treatment procedure. It is further more important to understand the difference between zeroes and missing values in the context of business. 
+  <br><br>
+  In weather forecasting, a value of zero is meaningful and different from missing values. The missing values would have appeared due to equipment failure or data loss among a multitude of reasons. It is sensible to impute missing values in such cases. Consider a demand forecasting problem where zero demand indicates no demand. There may not be a difference between zeroes and missing values in such cases and zero imputation makes perfect sense.
+  <br><br>
+  Missing values represent the intermittency of time-series and heavily influence the accuracy and model interpretability. The right problem ain't being solved if zeroes and missing values are treated inappropriately.
+  </p> 
+</div>
+
+<div id="Validation" class="tabcontent2">
+  <p>
+  The first two question will shed some light on the treatment of training data through business context. The validation methodology has to be deviced to not just assess the accuracy of forecasting models but also the extent to which they are solving the business problem. It needs to quantify the mathematical error and its implication on business.
+
+  <br><br>
+  There are several accuracy metrics to choose from for validating Regression models. In some situations MAPE is more suitable than RMSE as it quantifies accuracy on a relative basis. However, MABS can be more meaningful in situations where MAPE will be extremely large due to the scale of values. The models have to be validated with a combination of accuracy metrics to quantify the accuracy better. 
+
+  <br><br>
+  The association between the business problem and the time-series variable needs to be addressed too. For example, consider a problem where the volume of units sold is being forecasted with an objective to estimate cumulative revenue. The error in volume prediction might be small, but when several predictions are added to estimate total revenue, the error can become large. Hence, the error in revenue estimation has to dictate the acceptable error ranges of forecasting models.
+  </p> 
+</div>
+
+<script type="text/javascript">document.getElementById("defaultOpen2").click();</script><br> 
 <h3>Time-series classification</h3>
 ---
 <br>
@@ -162,50 +201,7 @@ With the time-series characters now being introduced, let's look at the suitable
 <h3>The Algorithms</h3>
 ---
 <br>
-<div class="tab">
-  <button class="tablinks2" onclick="showTabContent2(event, 'Smooth2')" id="defaultOpen2">SMOOTH</button>
-  <button class="tablinks2" onclick="showTabContent2(event, 'Intermittent2')">INTERMITTENT</button>
-  <button class="tablinks2" onclick="showTabContent2(event, 'Erratic2')">ERRATIC</button>
-  <button class="tablinks2" onclick="showTabContent2(event, 'Lumpy2')">LUMPY</button>
 
-</div>
-
-<div id="Smooth2" class="tabcontent2" checked="true">
-  <p>
-  Algorithms for Smooth:
-  <li>Prophet (weak seasonal effects)</li>
-  <li>ARIMA</li>
-  <li>Exponential smoothing</li>
-  </p>
-</div>
-
-<div id="Intermittent2" class="tabcontent2">
-  <p>
-  Algorithms for Intermittent:
-  <li>Prophet (strong seasonal and holiday effects)</li>
-  <li>Croston</li>
-  <li>Holt Winters' model</li>
-  </p> 
-</div>
-
-<div id="Erratic2" class="tabcontent2">
-  <p>
-  Algorithms for Erratic:
-  <li>Prophet (strong seasonal and holiday effects)</li>
-  <li>LSTM (subject to size of data)</li>
-  </p> 
-</div>
-
-<div id="Lumpy2" class="tabcontent2">
-  <p>
-  Algorithms for Lumpy:
-  <li>Moving Average</li>
-  <li>Prophet (strong seasonal and holiday effects)</li>
-  <li>LSTM (subject to size of data)</li>
-  <li>Exponential smoothing</li>
-  </p> 
-</div>
-<script type="text/javascript">document.getElementById("defaultOpen2").click();</script><br> 
 <h3>The Framework</h3>
 ---
 <br>
