@@ -4,7 +4,6 @@ permalink: /time-series/forecasting-at-scale/
 title: "Forecasting at Scale"
 date:   2020-12-29 13:34:00 +0530
 categories: time-series
-published: false
 ---
 
 <style>
@@ -76,7 +75,9 @@ published: false
 </style>
 
 <h3>Prologue</h3>
-Time-series forecasting is a widely adopted practice in many businesses that produce and store temporal measurements. Often, the scale of the use case causes a variety of problems in producing reliable and interpretable forecasts. Such problems include the volume, variety and quality of time-series data which makes it challenging to train intrepretable predictive models. Composers face a similar challenge due to the quantity, context and duration of scenes while producing music. Hence, data scientists can take inspiration from the framework followed by composers to build a robust framework for forecasting at scale. To understand how, continue reading by acknowledging that you are familiar with fundamentals of time-series. If you need a quick refresher on the same, go through our [Time-series 101](/time-series/time-series-101/).
+Time-series forecasting is a widely adopted practice in many businesses that produce and store temporal measurements. Often, the scale of the business problem causes a variety of problems in producing reliable and interpretable forecasts. Such problems include the volume, variety and quality of time-series data which makes it challenging to train intrepretable predictive models. 
+<br><br>
+A similar challenge is faced during the production of cinematic music due to the variation in the number and duration of scenes. And composers use a clever technique to tackle this problem, which can be replicated by Data Scientists to build a robust forecasting framework at scale. To understand how, continue reading by acknowledging that you are familiar with fundamentals of time-series. If you need a refresher, go through my [time-series primer](/time-series/time-series-primer/).
 
 ![time series 101](/assets/stock_images/data_science/time-series/forecasting-at-scale/cover.jpg)
 *Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
@@ -85,7 +86,21 @@ Time-series forecasting is a widely adopted practice in many businesses that pro
 <h3>The Scale</h3>
 ---
 <br>
-In our forecasting setup, volume is the main culprit with the number of time-series variables ranging from tens of tens to tens of thousands to tens of millions. With volume, comes the variety and quality issues that cause ambiguity in model selection. While producing score, the composers first create a few character specific tracks, and then mix multiple variations of the same for all the scenes having those characters. Each character can be thought of a class of time-series variables with similar characteristics. The character specific tracks are the class-suitable forecasting algorithms. Let's look at one of the popular time-series classification methods, the set of forecasting algorithms that are suitable for the classes, and finally the framework having variants of those algorithms which is capable of producing reliable forecasts at scale.
+Let's define the "scale" that is being addressed in this post. In our forecasting setup, the challenge is to tackle the sheer volume of time-series variables and the associated variety and data quality issues. In real-world problems, the number of time-series variables can range from tens of tens to tens of thousands to tens of millions. The "scale" being addressed here is the theoretical approach for model selection and interpretation for each variable. The engineering aspect of practically doing it using a distributed computing system shall be addressed in a different post in future.
+
+The brute force approach is to use an AutoMLesque time-series forecasting package for all variables. Such a package would select the best performing model for each variable and doing so would have solved only half the problem. Often, accuracy alone is not sufficient to justify interpretability of models. So, what are the feasible alternatives? - let's replicate the cinematic music production technique. 
+
+<h3>The technique</h3>
+---
+<br>
+First, a theme song is produced to be the signature music associated to the overall story. Then specific tracks are produced for prominent locations or characters in the story. For each scene, the music will be a mix of theme song and character/ location tracks.
+
+The theme of a forecasting problem can be defined by answering the following questions:
+<ul>
+	<li>Meaningful history</li>
+	<li>Meaning of zeroes and null values</li>
+	<li>Suitable model validation system</li>
+</ul> 
 <br>
 <h3>Time-series classification</h3>
 ---
