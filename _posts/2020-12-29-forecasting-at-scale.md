@@ -78,7 +78,7 @@ published: false
 <h3>Prologue</h3>
 Time-series forecasting is a widely adopted practice in many businesses that produce and store temporal measurements. Often, the scale of the business problem causes a variety of problems in producing reliable and interpretable forecasts. Such problems include the volume, variety and quality of time-series data which makes it challenging to train intrepretable predictive models. 
 <br><br>
-A similar challenge is faced during the production of cinematic music due to the variation in the number and duration of scenes. And composers use a clever technique to tackle this problem, which can be replicated by Data Scientists to build a robust forecasting framework at scale. To understand how, continue reading by acknowledging that you are familiar with fundamentals of time-series. If you need a refresher, go through my [time-series primer](/time-series/time-series-primer/).
+A similar challenge is faced during the production of cinematic music due to the variation in the number and duration of scenes. Composers use a clever technique to tackle this problem, which can be replicated by Data Scientists to build a robust forecasting framework at scale. To understand how, continue reading by acknowledging that you are familiar with fundamentals of time-series. If you need a refresher, go through my [time-series primer](/time-series/time-series-primer/).
 
 ![time series 101](/assets/stock_images/data_science/time-series/forecasting-at-scale/cover.jpg)
 *Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
@@ -87,16 +87,16 @@ A similar challenge is faced during the production of cinematic music due to the
 <h3>The Scale</h3>
 ---
 <br>
-Let's define the "scale" that is being addressed in this post. In our forecasting setup, the challenge is to tackle the sheer volume of time-series variables and the associated variety and data quality issues. In real-world problems, the number of time-series variables can range from tens of tens to tens of thousands to tens of millions. The "scale" being addressed here is the theoretical approach for model selection and interpretation for each variable. The engineering aspect of practically doing it using a distributed computing system shall be addressed in a different post in future.
+Tackling the sheer volume of time-series variables and the associated variety and data quality issues remain as the significant challenge in forecasting problems. The number of time-series variables can range from tens of tens to tens of thousands to tens of millions. This post addresses the scale of devising an appropriate framework to train and interpret models for each variable when there are several variables. The scale of engineering a distributed computing system for fast and efficient model training shall be addressed in a different post in future.
 
-The brute force approach is to use an AutoMLesque time-series forecasting package for all variables. Such a package would select the best performing model for each variable and doing so would have solved only half the problem. Often, accuracy alone is not sufficient to justify interpretability of models. So, what are the feasible alternatives? - let's replicate the cinematic music production technique. 
+The brute force approach is to use an AutoMLesque time-series forecasting package for all variables. Such a package would select the best performing model for each variable and doing so would have solved only half the problem. Often, accuracy alone is not sufficient to justify interpretability of models. A robust forecasting framework has to embody accuracy as well as interpretability. To build one, data scientists can replicate the cinematic music production technique. 
 
 <h3>The technique</h3>
 ---
 <br>
-First, a theme song is produced to be the signature music associated to the overall story. Then specific tracks are produced for prominent locations or characters in the story. For each scene, the music will be a mix of theme song and character/ location tracks.
+In cinematic music production, a theme song is composed to be the signature music associated to the overall story. Specific tracks are composed for prominent locations or characters in the story. For each scene, the music will be a mix of theme song and character/ location tracks. The duration of score will not scale proportionally with the duration of movie. To replicate this technique, Data Scientists need to identify the theme of the forecasting problem at hand and classify time-series variables as a few characters. 
 
-The theme of a forecasting problem can be defined by answering the following questions:
+The theme of the forecasting problem can be defined by answering the following questions:
 <ul>
 	<li>Meaningful history</li>
 	<li>Zeroes vs Missing values</li>
@@ -111,9 +111,12 @@ The theme of a forecasting problem can be defined by answering the following que
 
 <div id="History" class="tabcontent2" checked="true">
   <p>
-  Meaningful history is the amount of historical data suitable and useful for training. It is possible to determine this parameter using grid search. However, given the dynamic nature of most businesses, there can be multiple changepoints in the time-series. Hence the frequency of changepoints needs to be assessed for determining an appropriate start. If there are multiple valid starts to choose from, then grid search can be applied to select one.  
+  Meaningful history is the amount of historical data suitable and useful for training. This parameter can be determined using grid search. However, given the dynamic nature of most businesses, there can be multiple changepoints in the time-series. The frequency of changepoints needs to be assessed for determining an appropriate start. If there are multiple valid starts to choose from, then grid search can be applied to select one.  
   <br><br>
-  Let's consider stock-price prediction as an example. The time-series data shall be available for several years, but for most companies, prices before a few quarters into past would not have any relationship with present day prices. The years of data is not useful for training. Another example is prediction of number of customer footprints for a product or a website. The definition of the underlying variable, "customer footprint", can be influenced by business subjectivity that changes with time affecting the nature of time-series. 
+  Consider a stock-price prediction problem as an example. The time-series data shall be available for several years, but for most companies, prices before a few quarters into past would not have any relationship with those in the present day. The years of data is not useful for training. Consider user footprint volume prediction where the definition of user foot prints changes with time. The distribution of time-series changes everytime the definition changes, and not historical observations are useful for training.
+
+  <br><br>
+  These are the problems faced when data is abundant. But if it is not, the models cannot learn the true distributions and will be subject to heavy bias or variance. That's why interpretation of meaningful history from business is crucial and can guide data scientists in making better decisions in situations with varying data sizes. Also, it is a good practice to include a rule-based system or naive algorithms in addition to the traditional and sophisticated models in the AutoML package.
 
  
   </p>
@@ -123,21 +126,21 @@ The theme of a forecasting problem can be defined by answering the following que
   <p>
   The rationale behind presence of missing values needs to be investigated to decide on the right treatment procedure. It is further more important to understand the difference between zeroes and missing values in the context of business. 
   <br><br>
-  In weather forecasting, a value of zero is meaningful and different from missing values. The missing values would have appeared due to equipment failure or data loss among a multitude of reasons. It is sensible to impute missing values in such cases. Consider a demand forecasting problem where zero demand indicates no demand. There may not be a difference between zeroes and missing values in such cases and zero imputation makes perfect sense.
+  In weather forecasting, a value of zero is possible and different from missing values. The missing values would have appeared due to equipment failure or data loss among a multitude of reasons. In such cases, they have to be treated differently from zeroes. Consider a demand forecasting problem where zero demand indicates no demand. There may not be a difference between zeroes and missing values in such cases and they can be treated similarly.
   <br><br>
-  Missing values represent the intermittency of time-series and heavily influence the accuracy and model interpretability. The right problem ain't being solved if zeroes and missing values are treated inappropriately.
+  Missing values represent the intermittency of time-series and how they are treated will alter the distribution of time-series. The models aren't trained with right data if zeroes and missing values are treated inappropriately.
   </p> 
 </div>
 
 <div id="Validation" class="tabcontent2">
   <p>
-  The first two question will shed some light on the treatment of training data through business context. The validation methodology has to be deviced to not just assess the accuracy of forecasting models but also the extent to which they are solving the business problem. It needs to quantify the mathematical error and its implication on business.
+   A right validation procedure for a forecasting framework quantifies its potential to solve the business problem. The validation can be done right by approximating the business problem as a real-valued function of time-series variables. The uncertainity associated with the values of this function is derivable from the individual model errors.
 
   <br><br>
-  There are several accuracy metrics to choose from for validating Regression models. In some situations MAPE is more suitable than RMSE as it quantifies accuracy on a relative basis. However, MABS can be more meaningful in situations where MAPE will be extremely large due to the scale of values. The models have to be validated with a combination of accuracy metrics to quantify the accuracy better. 
+  For time-series variables, there are several metrics to evaluate accuracy. Sometimes, MAPE is more suitable if the error needs to be quantified on a relative basis. However, MABS can be more meaningful in situations where MAPE will be consistently larger due to the scale of values. A combination of traditional accuracy metrics shall be robust enough for any variable irrespective of its distribution. The uncertainity associated with the function of time-series variables can be estimated by applying the theory of random variables or simpler heuristics.
 
   <br><br>
-  The association between the business problem and the time-series variable needs to be addressed too. For example, consider a problem where the volume of units sold is being forecasted with an objective to estimate cumulative revenue. The error in volume prediction might be small, but when several predictions are added to estimate total revenue, the error can become large. Hence, the error in revenue estimation has to dictate the acceptable error ranges of forecasting models.
+   Consider a classical hierarchical forecasting problem where the volume of units sold is forecasted with an objective of estimating cumulative revenue. The errors made by the individual models can be small, but the error made on revenue estimation by adding the invidual predictions is unknown. Also, scale of unit-volumes might significantly differ from the scale of revenues. Traditional accuracy metrics like MAPE might get enlarged or shrunk in translation if the relationship between unit-volume and revenue is not linear. Unless computed, the performance of individual models cannot be correlated with the performance of forecasting system.
   </p> 
 </div>
 
