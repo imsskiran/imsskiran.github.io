@@ -94,7 +94,7 @@ The brute force approach is to use an AutoMLesque time-series forecasting packag
 <h3>The technique</h3>
 ---
 <br>
-In cinematic music production, a theme song is composed to be the signature music associated to the overall story. Specific tracks are composed for prominent locations or characters in the story. For each scene, the music will be a mix of theme song and character/ location tracks. The duration of score will not scale proportionally with the duration of movie. To replicate this technique, Data Scientists need to identify the theme of the forecasting problem at hand and classify time-series variables as a few characters. 
+In cinematic music production, a theme song is composed to be the signature music associated to the overall story. Specific tracks are composed for prominent locations or characters in the story. For each scene, the music will be a mix of theme song and character/ location tracks. The duration of score will not scale proportionally with the duration of movie. To replicate this technique, Data Scientists need to identify the theme of the forecasting problem at hand and map time-series variables into few relatable characters. 
 
 The theme of the forecasting problem can be defined by answering the following questions:
 <ul>
@@ -103,6 +103,7 @@ The theme of the forecasting problem can be defined by answering the following q
 	<li>Suitable validation rule book</li>
 </ul> 
 <br>
+Select a tab to view relevant information
 <div class="tab">
   <button class="tablinks2" onclick="showTabContent2(event, 'History')" id="defaultOpen2">History</button>
   <button class="tablinks2" onclick="showTabContent2(event, 'Zeroes & Missing values')">Zeroes vs Missing values</button>
@@ -111,12 +112,12 @@ The theme of the forecasting problem can be defined by answering the following q
 
 <div id="History" class="tabcontent2" checked="true">
   <p>
-  Meaningful history is the amount of historical data suitable and useful for training. This parameter can be determined using grid search. However, given the dynamic nature of most businesses, there can be multiple changepoints in the time-series. The frequency of changepoints needs to be assessed for determining an appropriate start. If there are multiple valid starts to choose from, then grid search can be applied to select one.  
+  Meaningful history is the amount of historical data suitable and useful for training. This parameter can be determined using grid search which will be computationally expensive at scale. However, given the dynamic nature of most businesses, there can be multiple changepoints in the time-series. The frequency of changepoints needs to be assessed for determining an appropriate start. If there are multiple valid starts to choose from, then grid search can be applied to select one.  
   <br><br>
-  Consider a stock-price prediction problem as an example. The time-series data shall be available for several years, but for most companies, prices before a few quarters into past would not have any relationship with those in the present day. The years of data is not useful for training. Consider user footprint volume prediction where the definition of user foot prints changes with time. The distribution of time-series changes everytime the definition changes, and not historical observations are useful for training.
+  A classic example is a stock-price prediction problem with years of data available but not useful in entirety for predicting future prices. In another situation with an objective of predicting user footprint volume, the definition of user footprints could change with time, implying not all historical observations are useful for training.
 
   <br><br>
-  These are the problems faced when data is abundant. But if it is not, the models cannot learn the true distributions and will be subject to heavy bias or variance. That's why interpretation of meaningful history from business is crucial and can guide data scientists in making better decisions in situations with varying data sizes. Also, it is a good practice to include a rule-based system or naive algorithms in addition to the traditional and sophisticated models in the AutoML package.
+  These are the problems faced when data is abundant. If it is not, the models will be subject to high bias or variance. To prove or disprove that, business-driven definition of meaningful history can be helpful. Also, it is a good practice to include a few rule-based and naive algorithms in the AutoML package to deal with varying data sizes.
 
  
   </p>
@@ -124,11 +125,11 @@ The theme of the forecasting problem can be defined by answering the following q
 
 <div id="Zeroes & Missing values" class="tabcontent2">
   <p>
-  The rationale behind presence of missing values needs to be investigated to decide on the right treatment procedure. It is further more important to understand the difference between zeroes and missing values in the context of business. 
+  The rationale behind the presence of missing values needs to be investigated to decide on the right treatment procedure. It is further more important to differentiate zeroes from missing values in the context of business. 
   <br><br>
-  In weather forecasting, a value of zero is possible and different from missing values. The missing values would have appeared due to equipment failure or data loss among a multitude of reasons. In such cases, they have to be treated differently from zeroes. Consider a demand forecasting problem where zero demand indicates no demand. There may not be a difference between zeroes and missing values in such cases and they can be treated similarly.
+  In weather forecasting, a value of zero is possible and different from missing values. The missing values would have appeared due to equipment failure or data loss among a multitude of reasons. In such cases, they have to be treated differently from zeroes. Consider a demand forecasting problem where zero demand indicates no demand. Here, zeroes may have the same meaning as the missing values do and they can be treated similarly.
   <br><br>
-  Missing values represent the intermittency of time-series and how they are treated will alter the distribution of time-series. The models aren't trained with right data if zeroes and missing values are treated inappropriately.
+  Missing values represent the intermittency of time-series and their treatment will alter its distribution. The models aren't trained with right data if zeroes and missing values are treated inappropriately.
   </p> 
 </div>
 
@@ -137,39 +138,29 @@ The theme of the forecasting problem can be defined by answering the following q
    A right validation procedure for a forecasting framework quantifies its potential to solve the business problem. The validation can be done right by approximating the business problem as a real-valued function of time-series variables. The uncertainity associated with the values of this function is derivable from the individual model errors.
 
   <br><br>
-  For time-series variables, there are several metrics to evaluate accuracy. Sometimes, MAPE is more suitable if the error needs to be quantified on a relative basis. However, MABS can be more meaningful in situations where MAPE will be consistently larger due to the scale of values. A combination of traditional accuracy metrics shall be robust enough for any variable irrespective of its distribution. The uncertainity associated with the function of time-series variables can be estimated by applying the theory of random variables or simpler heuristics.
+  For time-series variables, there are several metrics to evaluate accuracy. Sometimes, MAPE is more suitable if the error needs to be quantified on a relative scale. However, MABS can be more meaningful in situations where MAPE will be consistently larger due to the scale of values. A combination of traditional accuracy metrics shall be robust enough for any variable irrespective of its distribution. The uncertainity associated with the function of time-series variables can be estimated by applying the theory of random variables or simpler heuristics.
 
   <br><br>
-   Consider a classical hierarchical forecasting problem where the volume of units sold is forecasted with an objective of estimating cumulative revenue. The errors made by the individual models can be small, but the error made on revenue estimation by adding the invidual predictions is unknown. Also, scale of unit-volumes might significantly differ from the scale of revenues. Traditional accuracy metrics like MAPE might get enlarged or shrunk in translation if the relationship between unit-volume and revenue is not linear. Unless computed, the performance of individual models cannot be correlated with the performance of forecasting system.
+   Consider a classical hierarchical forecasting problem where the volume of units sold is forecasted with an objective of estimating cumulative revenue. The errors made by the individual models can be small, but the error made on revenue estimation by adding the individual predictions is unknown. Also, scale of unit-volumes might significantly differ from the scale of revenues. Traditional accuracy metrics like MAPE might get enlarged or shrunk in translation if the relationship between unit-volume and revenue is not linear. Unless computed, the performance of individual models cannot be correlated with the performance of forecasting system.
   </p> 
 </div>
 
 <script type="text/javascript">document.getElementById("defaultOpen2").click();</script><br> 
-<h3>Time-series classification</h3>
+
 ---
 <br>
-There are many advanced ways of accurately grouping or clustering time-series, some of which involve black-box unsupervised algorithms. However, the problem at hand is to handle volume and variety without compromising on the interpretability. One of the best suited methods for this situation is the super intuitive and computationally nimble classification method published in Croston et al.
+The composition of the theme song signifies the action plan for treatment of historical data and validation of forecast accuracy. The next step is the composition of character specific tunes. Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Croston et al (2002) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
+<h3>Time-series classification</h3>
 
-The classification is based on the attendance and variance of the time-series. In techincal terms, the quantities are:
-* <text style="color: #606060;">Average demand interval</text>
-* <text style="color: #606060;">Coefficient of variation</text>
+Croston et al (2002) classifies the time-series variables based on their intermittency and variance. The metrics to quantify intermittency and variance are:
+* <text style="color: #606060;">Average demand interval (ADI)</text>
+* <text style="color: #606060;">Coefficient of Variation squared (CV<sup>2</sup>)</text>
 
-Average demand interval is the ratio of total number of periods to the number of periods with non-zero (and non-null) values.
+Average demand interval is the ratio of total number of timestamps in the observation period to the number of timestamps with non-null values. Coefficient of Variation (squared) is the squared ratio of standard deviation to the mean of observations that are not nulls. 
 
-Coefficient of variation is the squared ratio of standard deviation to the mean of non-zero (and non-null) values of time-series
-<br>
-<!-- ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D) -->
+Null values are present in time-series when no real-value has been observed at certain timestamps. The presence of missing values due to data loss or observational failure is a different situation that has to be dealt through imputation.
 
-Croston and second scientist have formulated their own forecasting techniques for intermittent time-series. They wanted to verify if one of their models out-perform the others as the intermittency of time-series changes. To do so quantitatively, they have formulated an inequality that the theoritical mean squared error for one of the models is smaller than the others. The inequality has ADI and CV<sup>2</sup> as parameters and the boundary condition to hold the inequality resulted in ADI and CV taking the values 1.32 and 0.49 respectively.
-
-They have also conducted a statistical test by considering 3000 time-series. The time-series were classified based on ADI and CV<sup>2</sup> boundaries and the MSEs were computed for all three models. They have also verified the hypothesis by performing a chi-squared test with a null hypothesis that in a given class, the proportion of time-series with model 1 producing better forecast is significantly larger than model 2 producing better forecasts. 
-
-The paper classifies time-series into the following four classes:
-* <text style="color: #606060;">Smooth</text>
-* <text style="color: #606060;">Intermittent</text>
-* <text style="color: #606060;">Erratic</text>
-* <text style="color: #606060;">Lumpy</text>
-
+The time-series variables shall be classified into the following:
 
 <div class="tab">
   <button class="tablinks" onclick="showTabContent(event, 'Smooth')" id="defaultOpen">SMOOTH</button>
@@ -179,27 +170,30 @@ The paper classifies time-series into the following four classes:
 
 </div>
 <div id="Smooth" class="tabcontent">
-  <p>A time-series is classified as smooth if the ADI <= 1.32 and CV<sup>2</sup> <= 0.49. These are the time-series with good attendance and relatively little variance making forecasting techniques produce reliable forecasts. An example of a smooth time-series is <-smooth-> visualised in the plot below:</p>
+  <p>A time-series is smooth if its ADI <= 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance and presence of nearly no null values in the time-series. Traditional forecasting models can achieve high prediction accuracy over smooth time-series. The plot below shows a time-series which is smooth:</p>
 </div>
 
 <div id="Intermittent" class="tabcontent">
-  <p>A time-series is classified as intermittent if the ADI > 1.32 and CV<sup>2</sup> <= 0.49. These are the time-series with bad attendance but relatively little variance making it slightly difficult for forecasting techniques to produce reliable forecasts. An example of an intermittent time-series is <-intermittent-> visualised in the plot below:</p> 
+  <p>A time-series is intermittent if the ADI > 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance but presence of significant number of null values in the time-series. Traditional forecasting models capable of dealing intermittency can achieve reasonable prediction accuracy. The plot below shows a time-series which is intermittent:</p> 
 </div>
 
 <div id="Erratic" class="tabcontent">
- <p>A time-series is classified as erratic if the ADI <= 1.32 and CV<sup>2</sup> > 0.49. These are the time-series with good attendance but relatively high variance making it tough for forecasting techniques to produce reliable forecasts. An example of an erratic time-series is <-erratic-> visualised in the plot below:
-</p>
+ <p>A time-series is erratic if its ADI <= 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance and presence of nearly no null values in the time-series. The high variance could not be explainable by time dimension alone and hence it is generally not possible to achieve a reasonable prediction accuracy with traditional forecasting models. The plot below shows a time-series which is erratic:</p>
 </div>
 <div id="Lumpy" class="tabcontent">
- <p>A time-series is classified as lumpy if the ADI > 1.32 and CV<sup>2</sup> > 0.49. These are the time-series with bad attendance and relatively high variance making it extremely difficult and sometimes nearly impossible for forecasting techniques to produce reliable forecasts. An example of a lumpy time-series is <-lumpy-> visualised in the plot below:</p>
+ <p>A time-series is lumpy if its ADI > 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance but presence of significant number of null values in the time-series. There is too much variation and too little data to achieve a reasonable prediction accuracy. The plot below shows a time-series which is lumpy:</p>
 </div>
 
 <script type="text/javascript" src="/assets/js/main.js"></script>
 <script type="text/javascript">document.getElementById("defaultOpen").click();</script>
 <br>
-The classification looks simple but results in efficient segregation of time-series. A forecasting technique with great accuracy over smooth time-series might perform poorly over the remaining classes. An erratic time-series would need advanced deep learning architectures for getting better acccuracy but such models would most likely overfit a smooth time-series with fewer observations. Hence, this classification helps to straight-away eliminate a few algorithms (or variants) for each class thereby bringing down the ambiguity in model selection.
 
-With the time-series characters now being introduced, let's look at the suitable soundtracks (algorithms) for each character.
+These boundary conditions are mathematically dervied and stastically tested with 3000 time-series. They can be modified to have fewer time-series classified as smooth and intermittent. This classification is practical because it enhances the model selection. The AutoML can be configured to have more traditional algorithms for smooth and intermittent classes. In fact, there can be sub-classes within a class say smooth, seperated on CV<sup>2</sup>. Perhaps, forecasting models tuned for strong seasonal effects are not necessary for the sub-class with the smaller CV<sup>2</sup>.
+
+On erratic time-series, advanced time-series clustering algorithms can be applied for further sub-classification. The AutoML package has to be configured to activate several neurons by firing up the GPUs. This is the paradigm to unleash the RNNs, autoencoders and the likes. For lumpy time-series, AutoML configured with the rule-based/ naive and the black-box algorithms would come up with the best performing model. 
+
+All in all, time-series classification is a divide and conquer design pattern for forecasting at scale. It is algorithmically essential to optimize runtime & memory and adds up to the overall interpretability of the forecasting framework. With this step, the characters have been defined and the tunes have been composed.
+
 
 <h3>The Algorithms</h3>
 ---
