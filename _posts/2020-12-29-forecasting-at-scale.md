@@ -13,7 +13,7 @@ published: false
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 0px solid #ccc;
+  border: 1px solid #ccc;
   background-color: #f1f1f1;
   /*width: 723px;*/
 }
@@ -47,8 +47,8 @@ published: false
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 10px 0px;
-  /*border: 1px solid #ccc;*/
+  padding: 10px 10px;
+  border: 1px solid #ccc;
   border-top: none;
   -webkit-animation: fadeEffect 0.75s;
   animation: fadeEffect 0.75s;
@@ -57,8 +57,8 @@ published: false
 
 .tabcontent2 {
   display: none;
-  padding: 10px 0px;
-  /*border: 1px solid #ccc;*/
+  padding: 10px 10px;
+  border: 1px solid #ccc;
   border-top: none;
   -webkit-animation: fadeEffect 0.75s;
   animation: fadeEffect 0.75s;
@@ -146,11 +146,12 @@ Select a tab to view relevant information
 </div>
 
 <script type="text/javascript">document.getElementById("defaultOpen2").click();</script><br> 
+The answers to these three questions signify the action plan for treatment of historical data and validation of forecast accuracy. This is the act of composing the theme song. The next step is the composition of character specific tunes.
 
+<h3>Time-series classification</h3>
 ---
 <br>
-The composition of the theme song signifies the action plan for treatment of historical data and validation of forecast accuracy. The next step is the composition of character specific tunes. Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Croston et al (2002) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
-<h3>Time-series classification</h3>
+Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Croston et al (2002) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
 
 Croston et al (2002) classifies the time-series variables based on their intermittency and variance. The metrics to quantify intermittency and variance are:
 * <text style="color: #606060;">Average demand interval (ADI)</text>
@@ -160,7 +161,9 @@ Average demand interval is the ratio of total number of timestamps in the observ
 
 Null values are present in time-series when no real-value has been observed at certain timestamps. The presence of missing values due to data loss or observational failure is a different situation that has to be dealt through imputation.
 
-The time-series variables shall be classified into the following:
+The time-series variables shall be classified as illustrated below:
+
+The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and stastically tested with 3000 time-series. They can be modified to have fewer time-series classified smooth or intermittent. The tabs below describe the practicality of this classification: 
 
 <div class="tab">
   <button class="tablinks" onclick="showTabContent(event, 'Smooth')" id="defaultOpen">SMOOTH</button>
@@ -171,28 +174,32 @@ The time-series variables shall be classified into the following:
 </div>
 <div id="Smooth" class="tabcontent">
   <p>A time-series is smooth if its ADI <= 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance and presence of nearly no null values in the time-series. Traditional forecasting models can achieve high prediction accuracy over smooth time-series. The plot below shows a time-series which is smooth:</p>
+
+  <p>The AutoML can be configured to have predominatly more traditional algorithms for smooth time-series. As a step further, smooth can classified into "very smooth", "quite smooth" and "barely smooth" sub-classes based on CV<sup>2</sup>. This sub-classification enhances the model selection further as forecasting models with capability to learn strong seasonal patterns are required only for the last two sub-classes.</p> 
 </div>
 
 <div id="Intermittent" class="tabcontent">
-  <p>A time-series is intermittent if the ADI > 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance but presence of significant number of null values in the time-series. Traditional forecasting models capable of dealing intermittency can achieve reasonable prediction accuracy. The plot below shows a time-series which is intermittent:</p> 
+  <p>A time-series is intermittent if the ADI > 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance but presence of significant number of null values in the time-series. Traditional forecasting models capable of dealing intermittency can achieve reasonable prediction accuracy. The plot below shows a time-series which is intermittent:</p>
+
+  <p>Even for intermittent time-series, the AutoML can be configured to have more traditional algorithms than sophisticated ones. The sub-classification into "very intermittent", "quite intermittent" and "barely intermittent" shall be based on ADI. Superior traditional algorithms are required for only the first two sub-classes.</p> 
 </div>
 
 <div id="Erratic" class="tabcontent">
  <p>A time-series is erratic if its ADI <= 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance and presence of nearly no null values in the time-series. The high variance could not be explainable by time dimension alone and hence it is generally not possible to achieve a reasonable prediction accuracy with traditional forecasting models. The plot below shows a time-series which is erratic:</p>
+
+ <p>For erratic time-series, advanced time-series clustering algorithms are required for further sub-classification. The AutoML package can be configured to activate several neurons. This is the paradigm to unleash the RNNs, autoencoders and the likes.</p>
 </div>
 <div id="Lumpy" class="tabcontent">
  <p>A time-series is lumpy if its ADI > 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance but presence of significant number of null values in the time-series. There is too much variation and too little data to achieve a reasonable prediction accuracy. The plot below shows a time-series which is lumpy:</p>
+
+ <p>For lumpy time-series, it's either the rule-based/naive or the black-box algorithms that derive some sense from the sparse observations. Further sub-classification is not always necessary. To be more conservative, the ADI boundary with intermittent class can be modified to have more variables labelled as intermittent</p>
 </div>
 
 <script type="text/javascript" src="/assets/js/main.js"></script>
 <script type="text/javascript">document.getElementById("defaultOpen").click();</script>
 <br>
 
-These boundary conditions are mathematically dervied and stastically tested with 3000 time-series. They can be modified to have fewer time-series classified as smooth and intermittent. This classification is practical because it enhances the model selection. The AutoML can be configured to have more traditional algorithms for smooth and intermittent classes. In fact, there can be sub-classes within a class say smooth, seperated on CV<sup>2</sup>. Perhaps, forecasting models tuned for strong seasonal effects are not necessary for the sub-class with the smaller CV<sup>2</sup>.
-
-On erratic time-series, advanced time-series clustering algorithms can be applied for further sub-classification. The AutoML package has to be configured to activate several neurons by firing up the GPUs. This is the paradigm to unleash the RNNs, autoencoders and the likes. For lumpy time-series, AutoML configured with the rule-based/ naive and the black-box algorithms would come up with the best performing model. 
-
-All in all, time-series classification is a divide and conquer design pattern for forecasting at scale. It is algorithmically essential to optimize runtime & memory and adds up to the overall interpretability of the forecasting framework. With this step, the characters have been defined and the tunes have been composed.
+All in all, time-series classification is a divide and conquer design pattern for forecasting at scale. It not only optimizes runtime & memory but also enhances the overall interpretability of the forecasting framework. The classification of time-series variables is the act of associating them with 4-10 characters. Configuration of AutoML for each sub-class is the act of composing tunes for each character. 
 
 
 <h3>The Algorithms</h3>
