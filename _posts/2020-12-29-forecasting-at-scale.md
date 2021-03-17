@@ -89,7 +89,7 @@ A similar challenge is faced during the production of cinematic music due to the
 <br>
 Tackling the sheer volume of time-series variables and the associated variety and data quality issues remain as the significant challenge in forecasting problems. The number of time-series variables can range from tens of tens to tens of thousands to tens of millions. This post addresses the scale of devising an appropriate framework to train and interpret models for each variable when there are several variables. The scale of engineering a distributed computing system for fast and efficient model training shall be addressed in a different post in future.
 
-The brute force approach is to use an AutoMLesque time-series forecasting package for all variables. Such a package would select the best performing model for each variable and doing so would have solved only half the problem. Often, accuracy alone is not sufficient to justify interpretability of models. A robust forecasting framework has to embody accuracy as well as interpretability. To build one, data scientists can replicate the cinematic music production technique. 
+The brute force approach is to use an AutoMLesque time-series forecasting package for all variables, given one has the luxury of hardware. Such a package would select the best performing model for each variable and doing so would have solved only half the problem. Often, accuracy alone is not sufficient to justify interpretability of models. A robust forecasting framework has to embody accuracy as well as interpretability. To build one, data scientists can replicate the cinematic music production technique. 
 
 <h3>The technique</h3>
 ---
@@ -163,7 +163,7 @@ Null values are present in time-series when no real-value has been observed at c
 
 The time-series variables shall be classified as illustrated below:
 
-The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and stastically tested with 3000 time-series. They can be modified to have fewer time-series classified smooth or intermittent. The tabs below describe the practicality of this classification: 
+The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and stastically tested with 3000 time-series. They can be modified to have fewer time-series classified smooth or intermittent. The following tabs describe the practicality of this classification: 
 
 <div class="tab">
   <button class="tablinks" onclick="showTabContent(event, 'Smooth')" id="defaultOpen">SMOOTH</button>
@@ -175,24 +175,32 @@ The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and
 <div id="Smooth" class="tabcontent">
   <p>A time-series is smooth if its ADI <= 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance and presence of nearly no null values in the time-series. Traditional forecasting models can achieve high prediction accuracy over smooth time-series. The plot below shows a time-series which is smooth:</p>
 
-  <p>The AutoML can be configured to have predominatly more traditional algorithms for smooth time-series. As a step further, smooth can classified into "very smooth", "quite smooth" and "barely smooth" sub-classes based on CV<sup>2</sup>. This sub-classification enhances the model selection further as forecasting models with capability to learn strong seasonal patterns are required only for the last two sub-classes.</p> 
+  <p>The AutoML can be configured to have predominatly more traditional algorithms for smooth time-series. As a step further, smooth can classified into "very smooth", "quite smooth" and "barely smooth" sub-classes based on CV<sup>2</sup>. This sub-classification enhances the model selection further as superior forecasting models with capability to learn strong seasonal effects are only ever required for the last two sub-classes.
+  <br><br>
+  Facebook's Prophet with its seasonality and holiday components is a flexible formulation to tackle a range of predictable seasonal/ cyclic effects. A combination of STL decomposition, Auto-ARIMA and variants of Prophet (mild, moderate and strong seasonal effects) shall be robust enough to tame the variances in smooth time-series.
+  </p> 
 </div>
 
 <div id="Intermittent" class="tabcontent">
   <p>A time-series is intermittent if the ADI > 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance but presence of significant number of null values in the time-series. Traditional forecasting models capable of dealing intermittency can achieve reasonable prediction accuracy. The plot below shows a time-series which is intermittent:</p>
-
-  <p>Even for intermittent time-series, the AutoML can be configured to have more traditional algorithms than sophisticated ones. The sub-classification into "very intermittent", "quite intermittent" and "barely intermittent" shall be based on ADI. Superior traditional algorithms are required for only the first two sub-classes.</p> 
+  <br><br>
+  <p>Even for intermittent time-series, the AutoML can be configured to have more traditional algorithms than sophisticated ones. The sub-classification into "very intermittent", "quite intermittent" and "barely intermittent" shall be based on ADI. Superior traditional algorithms are required only for the first two sub-classes. A combination of Croston's model and variants of Prophet shall be sufficient for intermittent time-series.
+  </p> 
 </div>
 
 <div id="Erratic" class="tabcontent">
  <p>A time-series is erratic if its ADI <= 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance and presence of nearly no null values in the time-series. The high variance could not be explainable by time dimension alone and hence it is generally not possible to achieve a reasonable prediction accuracy with traditional forecasting models. The plot below shows a time-series which is erratic:</p>
 
- <p>For erratic time-series, advanced time-series clustering algorithms are required for further sub-classification. The AutoML package can be configured to activate several neurons. This is the paradigm to unleash the RNNs, autoencoders and the likes.</p>
+ <p>For erratic time-series, advanced time-series clustering algorithms are required for further sub-classification. The AutoML package can be configured to activate several neurons. This is the paradigm to unleash the RNNs, autoencoders and the likes. Moreover, the varinace may not be largely explainable by time and usage of external regressors can improve accuracy further. The next section briefly explains the addition of external regressors to forecasting models. 
+ <br><br>
+ Google debuted a time-series AutoML package in 2020 backed with a tall claim that it outperforms 92% of hand-crafted models for several kaggle datasets. Facebook debuted NeuralProphet, the gen-next update to the proven Prophet model. Given the availability of hardware, a combination of Google AutoML and NeuralProphet shall be a force to reckon with for erratic time-series. 
+ <br><br>
+ Although, Google and Facbook termed the compute costs to be moderate, such claims will always remain subjective. But selective application of AutoML and NeuralProphet for erratic time-series will reduce the hardware requirement further.</p>
 </div>
 <div id="Lumpy" class="tabcontent">
  <p>A time-series is lumpy if its ADI > 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance but presence of significant number of null values in the time-series. There is too much variation and too little data to achieve a reasonable prediction accuracy. The plot below shows a time-series which is lumpy:</p>
 
- <p>For lumpy time-series, it's either the rule-based/naive or the black-box algorithms that derive some sense from the sparse observations. Further sub-classification is not always necessary. To be more conservative, the ADI boundary with intermittent class can be modified to have more variables labelled as intermittent</p>
+ <p>For lumpy time-series, it's either the rule-based/naive or the black-box algorithms that can learn some pattern from the sparse observations. A combination of Croston's model, Google AutoML and NeuralProphet shall be robust enough for this class.</p>
 </div>
 
 <script type="text/javascript" src="/assets/js/main.js"></script>
@@ -202,7 +210,7 @@ The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and
 All in all, time-series classification is a divide and conquer design pattern for forecasting at scale. It not only optimizes runtime & memory but also enhances the overall interpretability of the forecasting framework. The classification of time-series variables is the act of associating them with 4-10 characters. Configuration of AutoML for each sub-class is the act of composing tunes for each character. 
 
 
-<h3>The Algorithms</h3>
+<h3>K-step validation and External Regressors</h3>
 ---
 <br>
 
