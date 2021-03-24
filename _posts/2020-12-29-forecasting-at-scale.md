@@ -227,7 +227,7 @@ All in all, time-series classification is a divide and conquer design pattern fo
 <h3>The Framework</h3>
 ---
 <br>
-The illustration below summarises the framework for mixing the theme song and the character tracks. This forecasting framework is scalable along its length and breadth. It is applicable for any number of time-series variables and its robustness can become even better with selective addition of more suitable algorithms without raising the compute costs on a disproportionate scale. 
+The illustration below summarises the framework for mixing the theme song and the character tracks. This forecasting framework is scalable along its length and breadth. It is applicable for any number of time-series variables and its robustness shall be further enhanced with selective addition of more suitable algorithms without raising the compute costs on a disproportionate scale. 
 
 ![framework](/assets/stock_images/data_science/time-series/forecasting-at-scale/the_framework.png)
 
