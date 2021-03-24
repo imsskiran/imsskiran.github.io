@@ -2,7 +2,7 @@
 layout: post
 permalink: /time-series/forecasting-at-scale/
 title: "Forecasting at Scale"
-date:   2020-12-29 13:34:00 +0530
+date:   2021-03-24 13:34:00 +0530
 categories: time-series
 <!-- published: false -->
 ---
@@ -80,7 +80,7 @@ Time-series forecasting is a widely adopted practice in many businesses that pro
 <br><br>
 A similar challenge is faced during the production of cinematic music due to the variation in the number and duration of scenes. Composers use a clever technique to tackle this problem, which can be replicated by Data Scientists to build a robust forecasting framework at scale. To understand how, continue reading by acknowledging that you are familiar with fundamentals of time-series. If you need a refresher, go through my [time-series primer](/time-series/time-series-primer/).
 
-![time series 101](/assets/stock_images/data_science/time-series/forecasting-at-scale/cover.jpg)
+![forecasting at scale](/assets/stock_images/data_science/time-series/forecasting-at-scale/cover.jpg)
 *Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 <br>
 
@@ -115,7 +115,8 @@ Select a tab to view relevant information
   Meaningful history is the amount of historical data suitable and useful for training. This parameter can be determined using grid search which will be computationally expensive at scale. However, given the dynamic nature of most businesses, there can be multiple changepoints in the time-series. The frequency of changepoints needs to be assessed for determining an appropriate start. If there are multiple valid starts to choose from, then grid search can be applied to select one.  
   <br><br>
   A classic example is a stock-price prediction problem with years of data available but not useful in entirety for predicting future prices. In another situation with an objective of predicting user footprint volume, the definition of user footprints could change with time, implying not all historical observations are useful for training.
-
+  <br><br>
+  <img src="/assets/stock_images/data_science/time-series/forecasting-at-scale/history.png">
   <br><br>
   These are the problems faced when data is abundant. If it is not, the models will be subject to high bias or variance. To prove or disprove that, business-driven definition of meaningful history can be helpful. Also, it is a good practice to include a few rule-based and naive algorithms in the AutoML package to deal with varying data sizes.
 
@@ -130,6 +131,8 @@ Select a tab to view relevant information
   In weather forecasting, a value of zero is possible and different from missing values. The missing values would have appeared due to equipment failure or data loss among a multitude of reasons. In such cases, they have to be treated differently from zeroes. Consider a demand forecasting problem where zero demand indicates no demand. Here, zeroes may have the same meaning as the missing values do and they can be treated similarly.
   <br><br>
   Missing values represent the intermittency of time-series and their treatment will alter its distribution. The models aren't trained with right data if zeroes and missing values are treated inappropriately.
+  <br><br>
+  <img src="/assets/stock_images/data_science/time-series/forecasting-at-scale/zeroes.png">
   </p> 
 </div>
 
@@ -144,7 +147,9 @@ Select a tab to view relevant information
    Consider a hierarchical forecasting problem where the volume of units sold is forecasted with an objective of estimating cumulative revenue. The errors made by the individual models can be small, but the error made on revenue estimation by adding the individual predictions is unknown. Also, scale of unit-volumes might significantly differ from the scale of revenues. Traditional accuracy metrics like MAPE might get enlarged or shrunk in translation if the relationship between unit-volume and revenue is not linear. Unless computed, the performance of individual models cannot be correlated with the performance of forecasting system.
   
   <br><br>
-  Moreover, considering the validation procedure itself, it is not straight-forward for time-series forecasting models, with the notion of k-fold cross validation being invalid. There will be a few data transformation steps before training and validation depending on the model. If this does not sound trivial, you are recommended to go through 
+  Moreover, the validation procedure is not straight-forward in time-series forecasting, with the notion of k-fold cross validation being invalid. There will be a few data transformation steps to be done before training and validation, depending on the model. A detailed post on the model validation in time-series forecasting shall be published soon.
+  <br><br>
+  <img src="/assets/stock_images/data_science/time-series/forecasting-at-scale/validation.png"> 
   </p>
 
 </div>
@@ -155,9 +160,9 @@ The answers to these three questions signify the action plan for treatment of hi
 <h3>Time-series classification</h3>
 ---
 <br>
-Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Croston et al (2002) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
+Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Croston et al (2004) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
 
-Croston et al (2002) classifies the time-series variables based on their intermittency and variance. The metrics to quantify intermittency and variance are:
+<a href="https://www.researchgate.net/profile/Rob-Hyndman/publication/222105798_A_note_on_the_categorization_of_demand_patterns/links/53eb3d2c0cf28f342f452219/A-note-on-the-categorization-of-demand-patterns.pdf">Croston et al (2004)</a> classifies the time-series variables based on their intermittency and variance. The metrics to quantify intermittency and variance are:
 * <text style="color: #606060;">Average demand interval (ADI)</text>
 * <text style="color: #606060;">Coefficient of Variation squared (CV<sup>2</sup>)</text>
 
@@ -166,6 +171,8 @@ Average demand interval is the ratio of total number of timestamps in the observ
 Null values are present in time-series when no real-value has been observed at certain timestamps. The presence of missing values due to data loss or observational failure is a different situation that has to be dealt through imputation.
 
 The time-series variables shall be classified as illustrated below:
+
+![framework](/assets/stock_images/data_science/time-series/forecasting-at-scale/ts_classification.png)
 
 The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and stastically tested with 3000 time-series. They can be modified to have fewer time-series classified smooth or intermittent. The following tabs describe the practicality of this classification: 
 
@@ -220,7 +227,10 @@ All in all, time-series classification is a divide and conquer design pattern fo
 <h3>The Framework</h3>
 ---
 <br>
-The figure below illustrates the process flow of a forecasting framework with time-series classification and the corresponding suitable variants of algorithms. 
+The illustration below summarises the framework for mixing the theme song and the character tracks. This forecasting framework is scalable along its length and breadth. It is applicable for any number of time-series variables and its robustness can become even better with selective addition of more suitable algorithms without raising the compute costs on a disproportionate scale. 
+
+![framework](/assets/stock_images/data_science/time-series/forecasting-at-scale/the_framework.png)
+
 <br>
 <h3>Epilogue</h3>
 <em>This is the framework my use case deserves,</em><br>
