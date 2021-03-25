@@ -8,11 +8,11 @@ tags: productivity accountability
 ---
 <h3>Prologue</h3>
 
-Meet Edward Kenway, a person with a well-paying job and degree from a reputed university. To the outside world, the life of Edward is fairly successful so far. However, in day to day life, Edward is productive only at work.  He seldom finds time for additional things during weekdays, and weekends fly even faster in the delusion of relaxation.
+Imagine a person who is an alumnus of a reputed university with a well-paying job. Based on these two achievements, the world around him/her considers them successful. In reality, this person is a big-time procrastinator but has an ability to finish the job in the nick of time. Hence, his/her procrastination has never been in question so far. 
 
-As a few years pass by, he begins to think his life isn't as full-filling as it used to be. He does not have many goals apart from getting a raise at work. He regrets being a procrastinator and believes that he could do more everyday. But this guilt isn't strong enough to make amends. He continues to live with this inertia, googling now and then about the life hacks to become more productive. For a lazy and impatient person that he is, he often gives up on the life hacks even before trying, thinking that they are  unrealistic, unsuitable or impossible to implement consistently.
+But this person is aware that lacking respect towards time would invite troubles some day. He/she has a belief that if they are already good in finishing jobs by spending little time, this good shall become great by spending a little more. But complaceny has taken them over to make any amends. As months pass by, they notice that life isn't as full-filling as it used to be, as they begin to succumb to boredom. 
 
-Edward is searching to find that seamless hack, which does not ask him to make (m)any lifestyle changes but precisely quantify the alarming inefficiencies in his life, for him to organically get that motivational push to find the way out of his grey area. If you find Edward relatable, here is that `hack` for you:
+The person wants to do more everday but lacks guidance or direction of what makes life more full-filling again. He/she is searching for a hack to enable seamless transition to more productive days. If you find this person relatable, here is that hack for you:
 
 <!-- <object data="/assets/RYFB.pdf" width="750" height="800" type='application/pdf'></object> -->
 <object data="/assets/RYFB.pdf" type="application/pdf" width="100%" height="800"></object>
@@ -20,17 +20,9 @@ Edward is searching to find that seamless hack, which does not ask him to make (
   open the PDF file in a new tab.</a></p>
 
 <h3>Epilogue</h3>
-After reading the book, you might be wholly or partially motivated to try measurement. Here is the summary of the author's experience after trying the hack:
+After reading the book, you might be wholly or partially convinced to try measurement. But here are a few facts to boost your motivation:
 
-<!-- <h4>The author (mid 20s):</h4> -->
-The author has been able to spend time on his hobby, learning and additional outdoor tasks on `measured 83%` of days during an experimental streak of 100 days of measurement. He produced this book and blog by spending time during the hobby slot. He simultaneously managed to finish 3 online courses by spending time during the learning slot. He has been able to achieve this productivity without diverting his time and attention from work and family. 
+During the intial experimental streak of 100 days, the author has been able to spend time on his hobby, learning and additional outdoor tasks on `measured 83%` of days. Outside of his work and time with family, he authored this book, created this blog, finished 3 online courses and also volunteered with an NGO by diligently spending stipulated time for the scheduled hobby, learning and outdoor task slots.
 
-<!-- <h4>The peer of author (late 30s):</h4>
-The peer of author is a working professional who is parallely pursuing her PhD. She states that she has been finding better balance between work and PhD upon trying measurement and that she has also implemented measurement in her work to achieve efficiency in handling multiple projects simultaneously.
-
-<h4>The second peer of author (late 20s):</h4>
-The second peer of author, a working professional who was also applying for admission into Masters programmes abroad managed to spend quality time on work as well as preparation without giving up on either. He also states that he has been having improved work-life balance later on upon continued implemention of the methods of measurement. 
- -->
-Edward thinks life hacks cannot be implemented consistently without truly believing in them. You are not expected to believe in this hack or peoples experiences. If you hypothesise that you can be more productive, measurement is a quick test to prove or disprove your hypothesis in a matter of days and can quantify your belief that you could do more. It helps you gain motivation from within which is required to maintain consistency.
-
-Thanks for reading and have a great day in a measured way!
+If you are already quite productive, you are still recommended to try measurement to evaluate, maintain and imporve your consistency.
+Thanks for reading my book and I hope you alloted a slot to finish the second chapter after reading the first. Have a great day in a measured way!
