@@ -20,7 +20,7 @@ The person wants to do more everday but lacks guidance or direction of what make
   open the PDF file in a new tab.</a></p>
 
 <h3>Epilogue</h3>
-After reading the book, you might be wholly or partially convinced to try measurement. But here are a few facts to boost your motivation:
+After reading the book, you might be wholly or partially convinced to try measurement. But here are a few results to boost your motivation:
 
 During the intial experimental streak of 100 days, the author has been able to spend time on his hobby, learning and additional outdoor tasks on `measured 83%` of days. Outside of his work and time with family, he authored this book, created this blog, finished 3 online courses and also volunteered with an NGO by diligently spending stipulated time for the scheduled hobby, learning and outdoor task slots.
 
