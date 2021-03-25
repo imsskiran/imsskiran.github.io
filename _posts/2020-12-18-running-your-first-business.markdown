@@ -14,7 +14,12 @@ As a few years pass by, he begins to think his life isn't as full-filling as it 
 
 Edward is searching to find that seamless hack, which does not ask him to make (m)any lifestyle changes but precisely quantify the alarming inefficiencies in his life, for him to organically get that motivational push to find the way out of his grey area. If you find Edward relatable, here is that `hack` for you:
 
-<object data="/assets/RYFB.pdf" width="750" height="800" type='application/pdf'></object>
+<!-- <object data="/assets/RYFB.pdf" width="750" height="800" type='application/pdf'></object> -->
+<object data="/assets/RYFB.pdf" type="application/pdf" width="750" height="800">
+  <p>Your web browser doesn't have a PDF plugin.
+  Instead you can <a href="/assets/RYFB.pdf">click here to
+  download the PDF file.</a></p>
+</object>
 
 <h3>Epilogue</h3>
 After reading the book, you might be wholly or partially motivated to try measurement. Here is the summary of the author's experience after trying the hack:
