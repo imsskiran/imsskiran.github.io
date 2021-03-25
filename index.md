@@ -149,12 +149,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   <img src="/assets/logo_chop.png" style="width:100%">
   <!-- <div class="text">Welcome</div> -->
 </div></a>
-<a href="/running-your-first-business/">
-<div class="mySlides fade">
-  <div class="numbertext">New</div>
-  <img src="/assets/stock_images/ryfb/thumbnail.png" style="width:100%">
-  <div class="text"><strong>Discover the measurement way of life</strong></div>
-</div></a>
 
 <a href="/time-series/time-series-primer/">
 <div class="mySlides fade">
@@ -163,9 +157,25 @@ body {font-family: Verdana, sans-serif; margin:0}
   <div class="text"><strong>Understand time-series fundamentals like never before</strong></div>
 </div></a>
 
+<a href="/time-series/forecasting-at-scale/">
+<div class="mySlides fade">
+  <div class="numbertext">New</div>
+  <img src="/assets/stock_images/data_science/time-series/forecasting-at-scale/thumbnail.png" style="width:100%">
+  <div class="text"><strong>Learn the composition of time-series music</strong></div>
+</div></a>
+
+<a href="/running-your-first-business/">
+<div class="mySlides fade">
+  <div class="numbertext">New</div>
+  <img src="/assets/stock_images/ryfb/thumbnail.png" style="width:100%">
+  <div class="text"><strong>Discover the measurement way of life</strong></div>
+</div></a>
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 
 
 </div>
@@ -174,7 +184,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 
 <script>
