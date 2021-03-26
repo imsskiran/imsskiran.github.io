@@ -185,7 +185,7 @@ The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and
 </div>
 <div id="Smooth" class="tabcontent">
   <p>A time-series is smooth if its ADI <= 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance and presence of nearly no null values in the time-series. Traditional forecasting models can achieve high prediction accuracy over smooth time-series. The plot below shows a time-series which is smooth:</p>
-  <iframe width="718" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/6.embed"></iframe>
+  <iframe width="100%" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/6.embed"></iframe>
 
   <p>The AutoML can be configured to have predominatly more traditional algorithms for smooth time-series. As a step further, smooth can classified into "very smooth", "quite smooth" and "barely smooth" sub-classes based on CV<sup>2</sup>. This sub-classification enhances the model selection further as superior forecasting models with capability to learn strong seasonal effects are only ever required for the last two sub-classes.
   <br><br>
@@ -195,7 +195,7 @@ The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and
 
 <div id="Intermittent" class="tabcontent">
   <p>A time-series is intermittent if the ADI > 1.32 and CV<sup>2</sup> <= 0.49. The conditions imply the small variance but presence of significant number of null values in the time-series. Traditional forecasting models capable of dealing intermittency can achieve reasonable prediction accuracy. The plot below shows a time-series which is intermittent:</p>
-  <iframe width="718" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/12.embed"></iframe>
+  <iframe width="100%" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/12.embed"></iframe>
   <br><br>
   <p>Even for intermittent time-series, the AutoML can be configured to have more traditional algorithms than sophisticated ones. The sub-classification into "very intermittent", "quite intermittent" and "barely intermittent" shall be based on ADI. Superior traditional algorithms are required only for the first two sub-classes. A combination of Croston's model and variants of Prophet shall be sufficient for intermittent time-series.
   </p> 
@@ -203,7 +203,7 @@ The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and
 
 <div id="Erratic" class="tabcontent">
  <p>A time-series is erratic if its ADI <= 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance and presence of nearly no null values in the time-series. The high variance could not be explainable by time dimension alone and hence it is generally not possible to achieve a reasonable prediction accuracy with traditional forecasting models. The plot below shows a time-series which is erratic:</p>
- <iframe width="718" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/18.embed"></iframe>
+ <iframe width="100%" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/18.embed"></iframe>
 
  <p>For erratic time-series, advanced time-series clustering algorithms are required for further sub-classification. The AutoML package can be configured to activate several neurons. This is the paradigm to unleash the RNNs, autoencoders and the likes. Moreover, the varinace may not be largely explainable by time and usage of external regressors can improve accuracy further. The next section briefly explains the addition of external regressors to forecasting models. 
  <br><br>
@@ -213,7 +213,7 @@ The boundary conditions on ADI and CV<sup>2</sup> are mathematically dervied and
 </div>
 <div id="Lumpy" class="tabcontent">
  <p>A time-series is lumpy if its ADI > 1.32 and CV<sup>2</sup> > 0.49. The conditions imply the high variance but presence of significant number of null values in the time-series. There is too much variation and too little data to achieve a reasonable prediction accuracy. The plot below shows a time-series which is lumpy:</p>
- <iframe width="718" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/10.embed"></iframe>
+ <iframe width="100%" height="450" frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/10.embed"></iframe>
 
  <p>For lumpy time-series, it's either the rule-based/naive or the black-box algorithms that can learn some pattern from the sparse observations. A combination of Croston's model, Google AutoML and NeuralProphet shall be robust enough for this class.</p>
 </div>

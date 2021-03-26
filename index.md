@@ -48,7 +48,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 /* Caption text */
 .text {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 2vw;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -161,7 +161,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 <div class="mySlides fade">
   <div class="numbertext">New</div>
   <img src="/assets/stock_images/data_science/time-series/forecasting-at-scale/thumbnail.png" style="width:100%">
-  <div class="text"><strong>Learn the composition of time-series music</strong></div>
+  <div class="text"><strong>Learn how to compose time-series music</strong></div>
 </div></a>
 
 <a href="/running-your-first-business/">
