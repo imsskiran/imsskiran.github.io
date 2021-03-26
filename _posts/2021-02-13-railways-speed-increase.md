@@ -7,22 +7,25 @@ categories: LORGs
 published: false
 ---
 
-<h2>Preamble</h2>
-There is a saying that time is money. In the transportaion industry, this cannot be more appropriate. If you are paid to transport objects or people between two fixed points, the faster you do it the higher will be your revenue, as you will find more time for doing additional trips. And if you are a monopoly operating on a network spanning 68000 kilometres, even a marginal increase in speed can result in disproportionate increase in revenues. 
+<h2>Prologue</h2>
+If you spent some time playing video games at the dawn of the 21st century, it is quite likely that you are familiar with NFS. For those who aren't, Need For Speed is a popular car racing video game franchise with each game having race missions that involve bigger rewards and faster cars as one progresses towards completion. In order to keep winning, the player has to spend money to make the car faster or buy a faster car. With money comes more speed and with speed comes even more money.
 
-Citing the same reason for many years now, the Indian government has been putting forth the proposal to upgrade the operational speed on the Indian rail network. However, due to a multitude of factors which include the enormous scale of the project, the proposals never gained much traction. But from the mid 2010s, things have changed, so much so that, solving this problem now looks more realistic than ever. In this post, we will discuss how the masterminds at Indian Railways are finally solving this problem with a realistic roadmap and serious conviction.
+Indian Railways has been playing a similar game on its quest to modernise itself. Increasing operational speed on a 68000 km railway network is a challenging game - one that involves six missions. Let's look at what those are and how IR is finally winning. 
 
+![indian railways](/assets/stock_images/lorgs/nfs_ir/cover.png)
+*Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+<br>
 The current operational speed is a maximum of 110 kmph which further reduces at locations with unstable terrains. But the existing rail network is capable of operational speeds upto 160 kmph. So, what's stopping the railways from operating at 160 kmph?
 
-<h3>Safety</h3>
+<h3>Mission 1: Safety</h3>
 ---
 <br>
-As the Indian Railways is one of the major mass transportaion systems in the country, safety must remain a superior priority. The number of accidents within the current operational spectrum is quite alarming. So, increasing the speed will most likely lead to a higher number of disasters.
+Being one of the mass transportaion systems in the country, safety has to be the first mission for IR. There are the three roadblocks against achieving better operational safety:
+* Unmanned level crossings
+* Obsolete rolling stock
+* Trespassing on the tracks
 
-The masterminds identified the following major roadblocks against achieving better operational safety:
-* Human and animal trespassing on the tracks
-* Presence of level crossings with roads having no supervision on traffic movement at many places
-* Obsolete and incapable operational equipment such as the locomotives, rolling stock and control (signal) systems
+Unmanned level crossings are the points of intersection of rails and roads. Leaving them unattended is equivalent to leaving a major four-road junction unattended without signals. A faster oncoming train will have a higher chance of having a deadlier collision. IR has come up with an action plan to convert all unmanned level crossings to manned and eventually eliminate them once and for all through construction of overpasses and underpasses. After collecting dust for several years, the action plan papers are finally put to use from 2010s. IR has been able to finish this sub-mission by March 2020. 
 
 Solving all these problems requires enormous amount of capital investment which is unaffordable the Railways as it is a government enterprise. Moreover, if they cannot maintain desirable travel safety with the present standard operating procedure, how could they do so by increasing the speed further? Therefore, safety is the achievement of the hour and they have done that exactly. The following stats quantify their efforts:
 
