@@ -11,12 +11,12 @@ People invest a lot of time and money on gadgets and smart technology. Some of t
 <h2 class="post-list-heading">Upcoming</h2>
 ---
 <br>
-<ul class="post-list"><li><span class="post-meta">Early 2021</span>
+<ul class="post-list"><li><span class="post-meta">Mid 2021</span>
         <h3>
           <a class="post-link">
             A bang-for-buck strategy to acquire Apple products
           </a>
-        </h3></li><li><span class="post-meta">Early 2021</span>
+        </h3></li><li><span class="post-meta">Mid 2021</span>
         <h3>
           <a class="post-link">
             How Apple created the photo editor for masses on iPhones

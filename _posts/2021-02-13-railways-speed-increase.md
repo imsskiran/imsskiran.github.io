@@ -1,9 +1,9 @@
 ---
 layout: post
-permalink: /lorgs/increasing-the-operational-speed-on-a-68000-km-railway-network/
-title: "'Semi-high speed rail network' - How the Indian Railways is making their age-old dream a reality"
+permalink: /lorgs/need-for-speed-indian-railways/
+title: "Need for Speed: Indian Railways"
 date:   2021-02-13 12:00:00 +0530
-categories: lorgs
+categories: LORGs
 published: false
 ---
 

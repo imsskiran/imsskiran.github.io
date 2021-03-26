@@ -82,10 +82,17 @@ There is an ocean of content on the concepts from Data Science and AI on the int
 <h2 class="post-list-heading">Recently published</h2>
 ---
 <br>
-<ul class="post-list"><li><span class="post-meta">Dec 27, 2020</span>
+<ul class="post-list"><li><span class="post-meta">Mar 24, 2021</span>
+    <h3>
+      <a class="post-link" href="/time-series/forecasting-at-scale/">
+        Forecasting at Scale
+      </a>
+    </h3></li></ul>
+
+<ul class="post-list"><li><span class="post-meta">Mar 10, 2021</span>
     <h3>
       <a class="post-link" href="/time-series/time-series-primer/">
-        Time-series 101
+        Time-series Primer
       </a>
     </h3></li></ul>
 

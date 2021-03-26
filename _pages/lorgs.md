@@ -13,9 +13,9 @@ LORG is an acronym for large organization. Such humungous organizations came int
 <ul class="post-list"><li><span class="post-meta">Early 2021</span>
         <h3>
           <a class="post-link">
-            Increasing the operational speed on a 68000 km railway network
+            Need for Speed: Indian Railways
           </a>
-        </h3></li><li><span class="post-meta">Early 2021</span>
+        </h3></li><li><span class="post-meta">Mid 2021</span>
         <h3>
           <a class="post-link">
             Creating a world class experience at the world's richest temple 
