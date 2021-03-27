@@ -3,7 +3,7 @@ layout: page
 permalink: /comment-policy/
 ---
 
-<h2 class="post-list-heading">Commenting on our posts</h2>
+<h2>Commenting on our posts</h2>
 ---
 <br>
 
@@ -23,4 +23,4 @@ In-order to uphold these principles, users are requested to not post any comment
 
 Users are always welcome to point any misconceptions and factual errors that may have unintentionally appeared in our posts. If you own any media used in our posts and believe there is some discrepancy in our adherence to your distribution policies, you can write to us at kiran.datasapien@gmail.com
 
-Hope you understand this comment policy and strictly adhere to it. You are hereby informed that violating so will lead to consequences ranging from removal of your comments, blocking you from using this site further and legal action in extreme cases, solely at the discretion of the founders. 
+Hope you understand this comment policy and strictly adhere to it. You are hereby informed that violating so will lead to consequences ranging from removal of your comments, blocking you from using this site further to legal action in extreme cases, solely at the discretion of the founders. 
