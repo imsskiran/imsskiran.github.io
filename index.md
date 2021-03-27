@@ -154,14 +154,14 @@ body {font-family: Verdana, sans-serif; margin:0}
 <div class="mySlides fade">
   <div class="numbertext">New</div>
   <img src="/assets/stock_images/data_science/time-series/time-series-101/thumbnail.png" style="width:100%">
-  <div class="text"><strong>Understand time-series fundamentals like never before</strong></div>
+  <div class="text"><strong>Time-series fundamentals explained like never before</strong></div>
 </div></a>
 
 <a href="/time-series/forecasting-at-scale/">
 <div class="mySlides fade">
   <div class="numbertext">New</div>
   <img src="/assets/stock_images/data_science/time-series/forecasting-at-scale/thumbnail.png" style="width:100%">
-  <div class="text"><strong>Learn how to compose time-series music</strong></div>
+  <div class="text"><strong>The art of composing time-series music</strong></div>
 </div></a>
 
 <a href="/running-your-first-business/">
