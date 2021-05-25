@@ -161,9 +161,9 @@ The answers to these three questions signify the action plan for treatment of hi
 <h3>Time-series classification</h3>
 ---
 <br>
-Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Croston et al (2004) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
+Before unleashing the AutoML, the time-series variables can be classified into a few characters based on their properties. Time-series clustering is a paradigm with ample scope for application of sophisticated algorithms. But the grounded approach presented in Syntetos et al (2005) is practical in a lot of situations, runs in a flash and comprehensible for business leaders. Let's fire up the hardware during model training, shall we?
 
-<a href="https://www.researchgate.net/profile/Rob-Hyndman/publication/222105798_A_note_on_the_categorization_of_demand_patterns/links/53eb3d2c0cf28f342f452219/A-note-on-the-categorization-of-demand-patterns.pdf">Croston et al (2004)</a> classifies the time-series variables based on their intermittency and variance. The metrics to quantify intermittency and variance are:
+<a href="https://www.researchgate.net/profile/Rob-Hyndman/publication/222105798_A_note_on_the_categorization_of_demand_patterns/links/53eb3d2c0cf28f342f452219/A-note-on-the-categorization-of-demand-patterns.pdf">Syntetos et al (2005)</a> classifies the time-series variables based on their intermittency and variance. The metrics to quantify intermittency and variance are:
 * <text style="color: #606060;">Average demand interval (ADI)</text>
 * <text style="color: #606060;">Coefficient of Variation squared (CV<sup>2</sup>)</text>
 

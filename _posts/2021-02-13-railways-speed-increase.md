@@ -10,19 +10,27 @@ author: "10 min read"
 ---
 
 <h2>Prologue</h2>
-If you spent some time playing video games at the dawn of the 21st century, it is quite likely that you are familiar with NFS. For those who aren't, Need For Speed is a popular car racing video game franchise with each game having race missions that involve bigger rewards and faster cars as one progresses towards completion. In order to keep winning, the player has to spend money to make the car faster or buy a faster car. With money comes more speed and with speed comes even more money.
+<!-- Rail transport is special. It is statistically the safest and the most economical means of mass transportation, one that offers a fun and hassle-free experience, especially while travelling as a group. For all its benefits, one of the of rail transport in India is its tardiness.  -->
+
+Trains are statistically the safest and the most economical means of mass transportation. They are truly special as they offer a fun and hassle-free travel experience, especially while travelling as a group. Interestingly, researchers found that emotional and social attributes such as nostalgia are one of the strongest attributes backing travellers' preference for rail transport. For all its merits, tardiness has been the biggest show-spoiler of rail transport in India.
+
+<!-- If you had travelled by Indian Railways, you would instantly relate to the numerous unplanned stops and the unrealistic arrival schedule of trains. 
+ -->
+Fortunataly, travel by Indian trains is only going to get better in future. In a bid to modernise itself, the Indian Railways (IR), which is the monopolistic operator of trains in the country on a vast 68000 km rail network, is solving six major problems to improve the operational efficiency of trains. Let's discuss the problems and Indian Railways' innovation & engineering behind the scenes.
+
+
+<!-- If you spent some time playing video games at the dawn of the 21st century, it is quite likely that you are familiar with NFS. For those who aren't, Need For Speed is a popular car racing video game franchise with each game having race missions that involve bigger rewards and faster cars as one progresses towards completion. In order to keep winning, the player has to spend money to make the car faster or buy a faster car. With money comes more speed and with speed comes even more money.
 
 Indian Railways has been playing a similar game on its quest to modernise itself. Increasing operational speed on a 68000 km railway network is a challenging game - one that involves six missions. Let's look at what those are and how IR is finally winning. 
-
+ -->
 ![indian railways](/assets/stock_images/lorgs/nfs_ir/cover.png)
-*Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+*Original Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), edited by Kiran Sripada*
 <br>
-The current operational speed is a maximum of 110 kmph which further reduces at locations with unstable terrains. But the existing rail network is capable of operational speeds upto 160 kmph. So, what's stopping the railways from operating at 160 kmph?
 
-<h3>Mission 1: Safety</h3>
+<h3>Problem 1: Safety</h3>
 ---
 <br>
-Being one of the mass transportaion systems in the country, safety has to be the first mission for IR. There are the three roadblocks against achieving better operational safety:
+The current operational speed of IR is a maximum of 110 kmph which further reduces at locations with unstable terrains. But its existing rail network is capable of withstanding speeds upto 160 kmph. So, what's stopping the IR from operating at 160?
 * Unmanned level crossings
 * Obsolete rolling stock
 * Trespassing on the tracks

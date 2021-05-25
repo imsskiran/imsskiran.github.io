@@ -87,6 +87,11 @@ permalink: /tab-test/
 
 <script type="text/javascript" src="/assets/js/main.js"></script>
 
+
+<!-- <iframe frameborder="0" scrolling="no" src="//plotly.com/~imsskiran/14.embed" style="width:100%; height: calc(100% + 500px);"></iframe>   -->
+
+
+
 <!-- <style type="text/css">
 	.row {
 	  display: flex;
