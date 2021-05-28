@@ -4,7 +4,7 @@ permalink: /lorgs/need-for-speed-indian-railways/
 title: "Need for Speed: Indian Railways"
 date:   2021-02-13 12:00:00 +0530
 categories: LORGs
-published: false
+<!-- published: false -->
 comments: true
 author: "10 min read"
 ---
@@ -12,11 +12,11 @@ author: "10 min read"
 <h2>Prologue</h2>
 <!-- Rail transport is special. It is statistically the safest and the most economical means of mass transportation, one that offers a fun and hassle-free experience, especially while travelling as a group. For all its benefits, one of the of rail transport in India is its tardiness.  -->
 
-Trains are statistically the safest and the most economical means of mass transportation. They are truly special as they offer a fun and hassle-free travel experience, especially while travelling as a group. Interestingly, researchers found that emotional and social attributes such as nostalgia are one of the strongest attributes backing travellers' preference for rail transport. For all its merits, tardiness has been the biggest show-spoiler of rail transport in India.
+Trains are statistically the safest and the most economical means of mass transportation. They are truly special as they offer a fun and hassle-free travel experience, especially while travelling as a group. Interestingly, researchers found that emotional and social attributes such as nostalgia are one of the strongest attributes backing travellers' preference for rail transport. Despite its merits, tardiness has been the biggest show-spoiler of rail transport in India.
 
 <!-- If you had travelled by Indian Railways, you would instantly relate to the numerous unplanned stops and the unrealistic arrival schedule of trains. 
  -->
-Fortunataly, travel by Indian trains is only going to get better in future. In a bid to modernise itself, the Indian Railways (IR), which is the monopolistic operator of trains in the country on a vast 68000 km rail network, is solving six major problems to improve the operational efficiency of trains. Let's discuss the problems and Indian Railways' innovation & engineering behind the scenes.
+Fortunataly, travel by Indian trains is only going to get better in future. In a bid to modernise itself, the Indian Railways (IR), which is the monopolistic operator of trains in the country on a vast 68000 km rail network, is solving six major problems to improve the operational efficiency of trains. Let's discuss those problems and the IR's innovation & engineering behind the scenes.
 
 
 <!-- If you spent some time playing video games at the dawn of the 21st century, it is quite likely that you are familiar with NFS. For those who aren't, Need For Speed is a popular car racing video game franchise with each game having race missions that involve bigger rewards and faster cars as one progresses towards completion. In order to keep winning, the player has to spend money to make the car faster or buy a faster car. With money comes more speed and with speed comes even more money.
@@ -26,16 +26,53 @@ Indian Railways has been playing a similar game on its quest to modernise itself
 ![indian railways](/assets/stock_images/lorgs/nfs_ir/cover.png)
 *Original Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), edited by Kiran Sripada*
 <br>
-
-<h3>Problem 1: Safety</h3>
+Indian Railways operates most trains at a maximum speed of 110 kmph. However, a siginificant portion of their rail network can sustain operations at much higher speeds. So, why can't they just increase the number from 110? Because they did not have the technology to do so, while maintaining safety, until early 2000s. The technological and operational challenges limiting the operational speeds of passenger trains are:
+* Locomotives
+* Rolling Stock
+* Network capacity
+* Level crossings
+* Trespassing on the tracks  
+<br>
+<h3>Problem 1: Locomotives</h3>
 ---
 <br>
-The current operational speed of IR is a maximum of 110 kmph which further reduces at locations with unstable terrains. But its existing rail network is capable of withstanding speeds upto 160 kmph. So, what's stopping the IR from operating at 160?
-* Unmanned level crossings
-* Obsolete rolling stock
-* Trespassing on the tracks
 
-Unmanned level crossings are the points of intersection of rails and roads. Leaving them unattended is equivalent to leaving a major four-road junction unattended without signals. A faster oncoming train will have a higher chance of having a deadlier collision. IR has come up with an action plan to convert all unmanned level crossings to manned and eventually eliminate them once and for all through construction of overpasses and underpasses. After collecting dust for several years, the action plan papers are finally put to use from 2010s. IR has been able to finish this sub-mission by March 2020. 
+<br>
+<h3>Problem 2: Rolling Stock</h3>
+---
+<br>
+The rolling stock of Indian trains (usually called as ICF coaches) have been designed to produce electricity required for HVAC systems on their own from motion. This self-sustainable design pattern mandates the power generating equipment to be located between the axles of coach thereby limiting its operatinal speed to 110 kmph.
+
+This self-generation cannot meet the demand in premium trains having only air conditioned coaches. Hence, a couple of additional coaches with diesel powered generators used to be attached to supply electricity in premium trains. Hence, the premium trains were operated at a higher speed of 130 kmph as their coaches do not have the hindrance of self-generating equiment.
+
+--- Space for ICF coach and self generation equipment images --- 
+
+Addition of such power generator coaches to all passenger trains would be a loss making affair from the perespective of economies of scale. A passenger train can be hauled with at most 24 coaches due to its length and locomotive haulage capacity limits. Replacement of two coaches with power cars will reduce the seating capacity and hence the revenue. Also, diesel generators significantly increase the operational costs and carbon footprint of IR. More importantly, the ICF coaches have much a higher tendency to flip in the event of disaster while running at higher speeds. 
+
+Hence, the rolling stock needs a major tehcnological and safety upgrade, which came in the form of LHB coaches. The Linke Hofmann Busch (LHB) coaches were deveoped by a German company of the same name from which IR made a technology transfer for local production. LHB coaches can be hauled at speeds upto 200 kmph and designed to be flip resistant. For the power supply, IR has begun manufacturing its locomotives with Head-on Generation (HOG) technology to transform and supply the high voltage OHE (Over Head Electricity) directly from locomotives to the coaches.
+
+--- Space for LHB coach imagery --- 
+
+IR has ceased production of ICF coaches and has been producing 1000s of LHB coaches since 2018. You are going to see your favorite train in red and grey in the months to come.
+<br>
+<h3>Problem 3: Network capacity</h3>
+---
+<br>
+With upgraded locomotives and rolling stock, IR will face a new challenge with faster passenger trains and slower freight trains on its already congested network. How could they decongest? Would they upgrade the speed of freight trains? Or would they reduce the freight traffic?
+
+Upgrading the speeds of longer, heavier and possibly inflammable freight trains on the existing rail network is a much harder problem to solve. Moreover, freight trains generated 64% of IR's total revenue in FY2020 while passenger trains have been loss-making for years. To be in business, IR could only operate even more freight trains.
+
+The golden quadrilateral and its diagonals spanning 8000km (connecting the cities New Delhi, Mumbai, Chennai and Kolkata) is found to have 70% share of IR's freight traffic movement across the years. With significant freight volume moving on a fraction of the network, IR has found a viable solution in constructing a dedicated freight corridor (DFC) of 8000km to decongest the existing rail network by 2027.
+
+--- Space for DFC and signalling imagery --- 
+
+IR is going to upgrade the existing routes for passenger trains with modern electronic signalling systems to operate trains at semi-high speed to high-speed (160 to 320 kmph) with a headway of 5-6 minutes.   
+br>
+<h3>Problem 4: Level crossings</h3>
+---
+<br>
+
+Unmanned level crossings are the points of intersection of rails and road. Leaving them unattended is equivalent to leaving a major four-road junction unattended without signals. A faster oncoming train will have a higher chance of having a deadlier collision. IR has come up with an action plan to convert all unmanned level crossings to manned and eventually eliminate them once and for all through construction of overpasses and underpasses. After collecting dust for several years, the action plan papers are finally put to use from 2010s. IR has been able to finish this sub-mission by March 2020. 
 
 Solving all these problems requires enormous amount of capital investment which is unaffordable the Railways as it is a government enterprise. Moreover, if they cannot maintain desirable travel safety with the present standard operating procedure, how could they do so by increasing the speed further? Therefore, safety is the achievement of the hour and they have done that exactly. The following stats quantify their efforts:
 
@@ -69,3 +106,10 @@ Indian Railways have first inducted the Linke-Holfmann Busch (LHB) class of coac
 
 Somehow by 2018, the railways cracked the code for mass production and decided to produce only the LHB coaches thereafter at all facilities, a welcome change towards enhanced speed and safety. Theoritically, LHB coaches can be tuned to attain speeds of up to 200 kmph. But the non-air conditioned class of coaches form signifcant portion of most Indian trains. These non-AC coaches have windows with open vents for air circulation that provide significant risks when operated at higher speeds. It seemed impossible to strip all non-AC coaches until September 2020, when IR came with a game-changing design of an air-conditioned coach with similar dimensions having enhanced capacity making up for the loss in revenue with reduction in fare. The railways is going to bet on the increased spending power of Indians to adapt to the AC class of travel in the future. 
 
+https://www.financialexpress.com/infrastructure/railways/after-becoming-worlds-largest-rail-factory-indian-railways-icf-to-beat-its-own-coach-production-record/1822460/
+
+https://www.livemint.com/industry/manufacturing/indian-railways-new-record-rcf-manufactures-nearly-1500-lhb-coaches-in-last-fy-11617284752066.html
+
+https://www.financialexpress.com/infrastructure/railways/why-indian-railways-is-manufacturing-only-lhb-design-coaches-now/1262887/
+
+https://www.statista.com/statistics/741257/india-railways-revenue-distribution-by-segment/
