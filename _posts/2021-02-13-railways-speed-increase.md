@@ -6,17 +6,20 @@ date:   2021-02-13 12:00:00 +0530
 categories: LORGs
 published: false
 comments: true
-author: "10 min read"
+author: "15 min read"
 ---
 
 <h2>Prologue</h2>
 <!-- Rail transport is special. It is statistically the safest and the most economical means of mass transportation, one that offers a fun and hassle-free experience, especially while travelling as a group. For all its benefits, one of the of rail transport in India is its tardiness.  -->
+Indian Railways is among the top five rail operators in the world with a staggering $27 billion revenue, 1.5 million workforce and transports 8 billion passengers every year. Over its 170 year operational history, it enjoyed undisputed market share in public and freight transportation despite its tardiness, with its vast 68000 km network connecting every nook and corner of the country.
 
-Trains are statistically the safest and the most economical means of mass transportation. They are truly special as they offer a fun and hassle-free travel experience, especially while travelling as a group. Interestingly, researchers found that emotional and social attributes such as nostalgia are one of the strongest attributes backing travellers' preference for rail transport. Despite its merits, tardiness has been the biggest show-spoiler of rail transport in India.
+However, with the exponential rise in road infrastructure and the coverage of air transportation over the years, Indian Railways (IR) has been losing its market share to faster air and cheaper road transportations. To remain competitive and sustainable in future, IR is in the dire need for speed to overcome its tardiness. And to achieve the same, it has laid down a massive modernisation masterplan to reclaim its glory. Since the early 2010s, IR has been implementing its modernisation plan through exemplary innovation and engineering to solve some of the most challenging problems, at a scale perhaps no other rail operator in the world has ever attempted.   
 
+<!-- Trains are statistically the safest and the most economical means of mass transportation. They are truly special as they offer a fun and hassle-free travel experience, especially while travelling as a group. Interestingly, researchers found that emotional and social attributes such as nostalgia are one of the strongest attributes backing travellers' preference for rail transport. Despite its merits, tardiness has been the biggest show-spoiler of rail transport in India.
+ -->
 <!-- If you had travelled by Indian Railways, you would instantly relate to the numerous unplanned stops and the unrealistic arrival schedule of trains. 
  -->
-Fortunataly, travel by Indian trains is only going to get better in future. In a bid to modernise itself, the Indian Railways (IR), which is the monopolistic operator of trains in the country on a vast 68000 km rail network, is solving six major problems to improve the operational efficiency of trains. Let's discuss those problems and the IR's innovation & engineering behind the scenes.
+<!-- Fortunataly, travel by Indian trains is only going to get better in future. In a bid to modernise itself, the Indian Railways (IR), which is the monopolistic operator of trains in the country on a vast 68000 km rail network, is solving six major problems to improve the operational efficiency of trains. Let's discuss those problems and the IR's innovation & engineering behind the scenes. -->
 
 
 <!-- If you spent some time playing video games at the dawn of the 21st century, it is quite likely that you are familiar with NFS. For those who aren't, Need For Speed is a popular car racing video game franchise with each game having race missions that involve bigger rewards and faster cars as one progresses towards completion. In order to keep winning, the player has to spend money to make the car faster or buy a faster car. With money comes more speed and with speed comes even more money.
@@ -26,7 +29,7 @@ Indian Railways has been playing a similar game on its quest to modernise itself
 ![indian railways](/assets/stock_images/lorgs/nfs_ir/cover.png)
 *Original Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), edited by Kiran Sripada*
 <br>
-Indian Railways operates most trains at a maximum speed of 110 kmph. However, a siginificant portion of their rail network can sustain operations at much higher speeds. So, why can't they just increase the number from 110? Because they did not have the technology to do so, while maintaining safety, until early 2000s. The technological and operational challenges limiting the operational speeds of passenger trains are:
+Indian Railways operates most trains at a maximum speed of 110 kmph. However, a siginificant portion of their rail network can sustain operations at much higher speeds. So, why can't they just increase the number from 110? Because they did not have the technology to do so, while maintaining safety, until early 2000s. The technological and operational challenges limiting the operational speeds are:
 * Locomotives
 * Rolling Stock
 * Network capacity
@@ -36,38 +39,38 @@ Indian Railways operates most trains at a maximum speed of 110 kmph. However, a 
 <h3>Problem 1: Locomotives</h3>
 ---
 <br>
+Indian trains are powered by a detachable locomotive. Until late 2000s, a significant portion of IR's network was unelectrified and its fleet of locmotives were predominantly diesel-electric. The diesel locos with a power of 2500-3000hp could haul an 18 coach passenger train at speeds upto 120 kmph. But with their inability to decelerate and accelerate faster, they could haul passenger trains with an average speed of 40-50 kmph and freight trains at much slower speeds. IR developed electric locomotives with 3000 - 5000hp power to haul longer trains at greater speeds but acceleration woes and presence of unelectrified sections in the route could not improve the average speeds of most passenger trains.
 
+A fleet of high horsepower electric locomotives can haul 24 coach passenger trains at 160 kmph with a fraction of operational costs required for a fleet of equally efficient non-renewable diesel-electric locos. Operationalising a fleet of 1000s of electric locomotives is a multi-year, multi-billion paradigm shift in IR's rail network, loco production, operation and maintenance engineering and has to be backed with huge volumes of (up)skilled personnel.
+
+Despite the massive challenge, IR has emabrked on this journey to become carbon-zero by 2030 with a fully electrified rail network. The electrification has been progressing at a pace of 2400 km per year since mid 2010s. To get a more intuitive sense of the pace, it takes about 16 hours for an electrician to electrify a 1200 square feet house. IR has developed the locomotives named WAG-12B and push-pull dual WAP-5 which are the next generation of electric locomotives with a horsepower as high as 12000. These locomotives are capable of running freight and passenger trains at 100 and 160 kmph respectively, effectively doubling the current average speeds.  
 <br>
 <h3>Problem 2: Rolling Stock</h3>
 ---
 <br>
-The rolling stock of Indian trains (usually called as ICF coaches) have been designed to produce electricity required for HVAC systems on their own from motion. This self-sustainable design pattern mandates the power generating equipment to be located between the axles of coach thereby limiting its operatinal speed to 110 kmph.
+The rolling stock of Indian trains (usually called as ICF coaches) has been designed to produce electricity required for HVAC systems on its own from motion. This self-sustainable design pattern mandates the power generating equipment to be located at the centre of the axles of the coach, which limits its operational speed to 110 kmph.
 
-This self-generation cannot meet the demand in premium trains having only air conditioned coaches. Hence, a couple of additional coaches with diesel powered generators used to be attached to supply electricity in premium trains. Hence, the premium trains were operated at a higher speed of 130 kmph as their coaches do not have the hindrance of self-generating equiment.
+An alternative to the self-generation equipment is a diesel-powered electricity generator, which used to be attached to premium trains to increase the speed to 130 kmph. Addition of such power generator coaches to all passenger trains is possible only by replacing exisiting passenger coaches, which would decrease the revenue and increase the costs thereby leading to losses. More importantly, the ICF coaches have a lower safety rating at higher speeds with their higher tendency to flip in the event of disaster.
 
---- Space for ICF coach and self generation equipment images --- 
+Hence, the rolling stock needs a major tehcnological and safety upgrade, which came in the form of LHB coaches. The Linke Hofmann Busch (LHB) coaches were deveoped by a German company of the same name from which IR made a technology transfer for local production. LHB coaches can be hauled at speeds upto 200 kmph and are designed to be flip resistant. For the power supply, IR has begun equipping its locomotives with Head-on Generation (HOG) technology to transform and supply the electricity to the coaches directly from the over head power lines.
 
-Addition of such power generator coaches to all passenger trains would be a loss making affair from the perespective of economies of scale. A passenger train can be hauled with at most 24 coaches due to its length and locomotive haulage capacity limits. Replacement of two coaches with power cars will reduce the seating capacity and hence the revenue. Also, diesel generators significantly increase the operational costs and carbon footprint of IR. More importantly, the ICF coaches have much a higher tendency to flip in the event of disaster while running at higher speeds. 
+--- Space for ICF and LHB coach imagery --- 
 
-Hence, the rolling stock needs a major tehcnological and safety upgrade, which came in the form of LHB coaches. The Linke Hofmann Busch (LHB) coaches were deveoped by a German company of the same name from which IR made a technology transfer for local production. LHB coaches can be hauled at speeds upto 200 kmph and designed to be flip resistant. For the power supply, IR has begun manufacturing its locomotives with Head-on Generation (HOG) technology to transform and supply the high voltage OHE (Over Head Electricity) directly from locomotives to the coaches.
-
---- Space for LHB coach imagery --- 
-
-IR has ceased production of ICF coaches and has been producing 1000s of LHB coaches since 2018. You are going to see your favorite train in red and grey in the months to come.
+IR has ceased the production of ICF coaches and has been producing 1000s of LHB coaches every year with an objective to upgrade all passenger trains.
 <br>
 <h3>Problem 3: Network capacity</h3>
 ---
 <br>
-With upgraded locomotives and rolling stock, IR will face a new challenge with faster passenger trains and slower freight trains on its already congested network. How could they decongest? Would they upgrade the speed of freight trains? Or would they reduce the freight traffic?
+With upgraded locomotives and rolling stock, IR will face a new challenge in operating faster passenger trains and relatively slower freight trains on its already congested network. How could they decongest? Would they further upgrade the speed of freight trains? Or would they reduce the freight traffic?
 
-Upgrading the speeds of longer, heavier and possibly inflammable freight trains on the existing rail network is a much harder problem to solve. Moreover, freight trains generated 64% of IR's total revenue in FY2020 while passenger trains have been loss-making for years. To be in business, IR could only operate even more freight trains.
+Upgrading the speeds of longer, heavier and potentially inflammable freight trains further on the existing rail network is practically impossible. Moreover, freight trains generated 64% of IR's total revenue in FY2020 while passenger trains have been loss-making for years. IR cannot afford to operate fewer freight trains with rising demand.
 
-The golden quadrilateral and its diagonals spanning 8000km (connecting the cities New Delhi, Mumbai, Chennai and Kolkata) is found to have 70% share of IR's freight traffic movement across the years. With significant freight volume moving on a fraction of the network, IR has found a viable solution in constructing a dedicated freight corridor (DFC) of 8000km to decongest the existing rail network by 2027.
+A part of the rail network dubbed the golden quadrilateral spanning 8000km (connecting the cities New Delhi, Mumbai, Chennai and Kolkata) is found to have 70% of IR's freight traffic movement. With significant freight volume moving on a fraction of the network, IR has found a viable solution in constructing a dedicated freight corridor (DFC) of 8000km to decongest its existing rail network.
 
 --- Space for DFC and signalling imagery --- 
 
 IR is going to upgrade the existing routes for passenger trains with modern electronic signalling systems to operate trains at semi-high speed to high-speed (160 to 320 kmph) with a headway of 5-6 minutes.   
-br>
+<br>
 <h3>Problem 4: Level crossings</h3>
 ---
 <br>
