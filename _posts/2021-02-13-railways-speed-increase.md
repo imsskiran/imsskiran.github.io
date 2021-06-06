@@ -90,8 +90,8 @@ The last of the challenges in the quest for speed arises due to the inevitable r
 
 The only solution is to eliminate them once and for all by elevating either the rail or the road at the level crossing. There are 32000 level crossings across the network, a number so enormous that 30% of them were left unattended till 2018, let alone elevated. The level crossings are being eliminated at a pace of 1200-1500 per year since 2018. IR intends to fence the golden quadrilateral in its entiriety and eventually its entire network from level crossings and trespassing. 
 
-![dfc](/assets/stock_images/lorgs/nfs_ir/dfc.png)
-*Source of images: Screenshots from videos posted by [DFCCIL](https://www.youtube.com/channel/UCW6OR7DynNFQ59OV6k85LtQ)*
+![dfc](/assets/stock_images/lorgs/nfs_ir/lc_trespass.png)
+*Source of images: Unsplash*
 
 <h2>Epilogue</h2>
 Indian Railways is the centuries-old LORG with its legacy nearly undone by its tardiness, bureaucracy and ageing fleet. Its turnaround in the last decade to become a modern government enterprise preparing to offer world-class service at humongous scale with ever growing safety record, commitment towards sustainability and inclusivity is nothing short of monumental and marks the return of the king of Indian commerce. 
