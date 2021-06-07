@@ -1,12 +1,13 @@
 ---
 layout: post
-permalink: /time-series/
+permalink: /machine-learning/
 ---
-<h2 class="post-list-heading">Time-series</h2>
+<h2 class="post-list-heading">Machine Learning</h2>
 ---
 <br>
 <div>
-{% for post in site.categories.time-series %}
+{% assign ps = 0 %}
+{% for post in site.categories.machine-learning %}
   {%- if post.hidden -%}
       <p></p>
   {%- else -%}
@@ -20,18 +21,24 @@ permalink: /time-series/
         {%- if post.author -%}
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
         {%- endif -%}</p>
-      </div><br>
+      </div>
+      {% assign ps = 1 %}
   {%- endif -%}
  
 {% endfor %}
 </div>
-<br>
+
+{%- if ps == 0 -%}
+    No posts yet!
+{%- endif -%}
+
+<br><br>
 <h3 class="post-list-heading">Upcoming</h3>
 ---
 <br>
 <div>
 {% assign upc = 0 %}
-{% for post in site.categories.time-series %}
+{% for post in site.categories.machine-learning %}
   {%- if post.hidden -%}
       <div>
       <p class="post-meta">
@@ -43,7 +50,7 @@ permalink: /time-series/
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
         {%- endif -%}</p>
       <h3 class="post-title p-name" itemprop="name headline"><a href="">{{ post.title | escape }}</a></h3>
-      </div><br>
+      </div>
       {% assign upc = 1 %}
   {%- endif -%}
 
@@ -54,7 +61,3 @@ permalink: /time-series/
     None yet!
 {%- endif -%}
 
-{% if site.categories.time-series %}
-{% else %}
-   <div><p align="centre">No posts yet!</p></div>
-{% endif %}

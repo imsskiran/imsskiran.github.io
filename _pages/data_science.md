@@ -54,14 +54,14 @@ There is an ocean of content on the concepts from Data Science and AI on the int
 
 <div class="row"> 
   <div class="column">
-    <a href="/posts/"><img src="/assets/stock_images/data_science/deep_learning.png"></a>
-    <a href="/posts/"><img src="/assets/stock_images/data_science/statistics.png"></a>
-    <a href="/posts/"><img src="/assets/stock_images/data_science/python.png"></a>
+    <a href="/statistics/"><img src="/assets/stock_images/data_science/statistics.png"></a>
+    <a href="/python/"><img src="/assets/stock_images/data_science/python.png"></a>
+    <a href="/deep-learning/"><img src="/assets/stock_images/data_science/deep_learning.png"></a>
   </div>
   <div class="column">
-    <a href="/posts/"><img src="/assets/stock_images/data_science/machine_learning.png"></a>
-    <a href="/posts/"><img src="/assets/stock_images/data_science/time_series.png"></a>
-    <a href="/posts/"><img src="/assets/stock_images/data_science/spark.png"></a>
+    <a href="/time-series/"><img src="/assets/stock_images/data_science/time_series.png"></a>
+    <a href="/spark/"><img src="/assets/stock_images/data_science/spark.png"></a>
+    <a href="/machine-learning/"><img src="/assets/stock_images/data_science/machine_learning.png"></a>
   </div> 
 </div>
 
@@ -78,7 +78,7 @@ There is an ocean of content on the concepts from Data Science and AI on the int
   <a href="/blog/"><img src="/assets/stock_images/data_science/spark.png" width="355" height="70"/></a> 
 </p> -->
 
-<br>
+<!-- <br>
 <h2 class="post-list-heading">Recently published</h2>
 ---
 <br>
@@ -118,3 +118,4 @@ There is an ocean of content on the concepts from Data Science and AI on the int
           </a>
         </h3></li>
         </ul>
+ -->

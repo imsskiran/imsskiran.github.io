@@ -252,13 +252,13 @@ function showSlides2(n) {
 <div class="row"> 
   <div class="column">
     <a href="/data-science/"><img src="/assets/stock_images/data_science.png"></a>
-    <a href="/automobiles/"><img src="/assets/stock_images/automobiles.png"></a>
-    <a href="/personal-tech/"><img src="/assets/stock_images/personal_tech.png"></a>
+    <!-- <a href="/automobiles/"><img src="/assets/stock_images/automobiles.png"></a> -->
+    <!-- <a href="/personal-tech/"><img src="/assets/stock_images/personal_tech.png"></a> -->
   </div>
   <div class="column">
     <a href="/lorgs/"><img src="/assets/stock_images/lorgs.png"></a>
-    <a href="/wildlife/"><img src="/assets/stock_images/wildlife.png"></a>
-    <a href="/posts/"><img src="/assets/stock_images/browse_all.png"></a>
+    <!-- <a href="/wildlife/"><img src="/assets/stock_images/wildlife.png"></a> -->
+    <!-- <a href="/posts/"><img src="/assets/stock_images/browse_all.png"></a> -->
   </div> 
 </div>
 <!-- <p float="centre">
