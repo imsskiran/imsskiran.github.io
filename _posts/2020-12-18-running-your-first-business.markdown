@@ -5,6 +5,7 @@ date:   2020-12-18 10:09:13 +0530
 categories: jekyll update
 permalink: /running-your-first-business/
 tags: productivity accountability
+comments: false
 ---
 <h3>Prologue</h3>
 
