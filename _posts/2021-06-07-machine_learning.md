@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posthome
 permalink: /machine-learning/
 comments: false
 ---

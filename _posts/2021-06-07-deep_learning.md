@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posthome
 permalink: /deep-learning/
 comments: false
 ---
