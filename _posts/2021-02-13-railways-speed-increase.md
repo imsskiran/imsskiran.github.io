@@ -28,7 +28,7 @@ However, with the exponential rise in road infrastructure and the coverage of ai
 Indian Railways has been playing a similar game on its quest to modernise itself. Increasing operational speed on a 68000 km railway network is a challenging game - one that involves six missions. Let's look at what those are and how IR is finally winning. 
  -->
 ![indian railways](/assets/stock_images/lorgs/nfs_ir/cover.png)
-*Original Photo by [Vienna Reyes](https://unsplash.com/@viennachanges) on [Unsplash](https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), edited by Kiran Sripada*
+*Original Photo by Sai Kiran Anagani on Unsplash, edited by Kiran Sripada*
 <br>
 Indian Railways operates most trains at a maximum speed of 110 kmph. Despite having a rail network that accommodates faster movement of trains, IR could not increase the operational speeds due to the following challenges:
 * Locomotives
