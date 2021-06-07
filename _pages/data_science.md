@@ -65,6 +65,31 @@ There is an ocean of content on the concepts from Data Science and AI on the int
   </div> 
 </div>
 
+<br>
+<h3>Recently Published</h3>
+---
+<br>
+<div>
+{% for post in site.categories.data-science %}
+  {%- if post.hidden -%}
+      <p></p>
+  {%- else -%}
+      <div>
+      <h3 class="post-title p-name" itemprop="name headline"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ post.date | date: date_format }}
+        </time>
+        {%- if post.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
+        {%- endif -%}</p>
+      </div><br>
+          
+  {%- endif -%}
+ 
+{% endfor %}
+</div>
 <!-- p float="left">
   <a href="/blog/"><img src="/assets/stock_images/data_science/deep_learning.png" width="355" height="70"/></a>
   <a href="/data-science/"><img src="/assets/stock_images/data_science/machine_learning.png" width="355" height="70" hspace="0" object-fit="contain"/></a>
@@ -119,3 +144,5 @@ There is an ocean of content on the concepts from Data Science and AI on the int
         </h3></li>
         </ul>
  -->
+
+

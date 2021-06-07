@@ -171,7 +171,15 @@ body {font-family: Verdana, sans-serif; margin:0}
   <div class="text"><strong>Discover the measurement way of life</strong></div>
 </div></a>
 
+<a href="/lorgs/need-for-speed-indian-railways/">
+<div class="mySlides fade">
+  <div class="numbertext">New</div>
+  <img src="/assets/stock_images/lorgs/nfs_ir/thumbnail.png" style="width:100%">
+  <div class="text"><strong>Need for Speed: Indian Railways</strong></div>
+</div></a>
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -185,7 +193,8 @@ body {font-family: Verdana, sans-serif; margin:0}
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
 </div>
 
 <script>

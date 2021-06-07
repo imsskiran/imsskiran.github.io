@@ -3,7 +3,7 @@ layout: post
 permalink: /time-series/forecasting-at-scale/
 title: "Forecasting at Scale"
 date:   2021-03-24 13:34:00 +0530
-categories: time-series
+categories: time-series data-science
 comments: true
 author: "20 min read"
 ---
