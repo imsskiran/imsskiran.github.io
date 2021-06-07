@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: /time-series/
+comments: false
 ---
 <h2 class="post-list-heading">Time-series</h2>
 ---

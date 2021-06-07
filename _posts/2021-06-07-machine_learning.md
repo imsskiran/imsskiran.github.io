@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: /machine-learning/
+comments: false
 ---
 <h2 class="post-list-heading">Machine Learning</h2>
 ---

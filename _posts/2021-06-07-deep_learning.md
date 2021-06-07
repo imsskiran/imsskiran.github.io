@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: /deep-learning/
+comments: false
 ---
 <h2 class="post-list-heading">Deep Learning</h2>
 ---

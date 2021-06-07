@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: /statistics/
+comments: false
 ---
 <h2 class="post-list-heading">Statistics</h2>
 ---
