@@ -17,5 +17,5 @@ Data Sapien will have posts on advanced topics and practitioner problems studied
 [Kiran S. Sripada](https://linkedin.com/in/kiran-sripada-5a35b1a5) works as a Research Scientist at American Express and is a graduate from [Indian Institute of Technology Madras](https://www.iitm.ac.in). He is curious to fathom the depths of conception of any theory he learns, with a belief that doing so will enhance his ability to apply in the right situations. For many years now, he has been experimenting to simplify technical presentations using analogies and visual imagery.
 
 If you are curious to learn a hack to enhance your productivity, checkout his book:
-<br>[Running Your First Business](/RYFB.pdf)
+<br>[Running Your First Business](/read_the_book.html/)
  

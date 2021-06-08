@@ -164,7 +164,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   <div class="text"><strong>The art of composing time-series music</strong></div>
 </div></a>
 
-<a href="/running-your-first-business/">
+<a href="/read_the_book.html/">
 <div class="mySlides fade">
   <div class="numbertext">New</div>
   <img src="/assets/stock_images/ryfb/thumbnail.png" style="width:100%">

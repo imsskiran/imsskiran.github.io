@@ -2,7 +2,7 @@
 layout: page
 title: Read the book
 <!-- permalink: /data/RYFB.pdf/ -->
-published: false
+<!-- published: false -->
 ---
 
 
