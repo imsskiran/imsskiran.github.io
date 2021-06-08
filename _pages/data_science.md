@@ -46,7 +46,7 @@ permalink: /data-science/
 <h2 class="post-list-heading">Data Science</h2>
 ---
 <br>
-The data science category will have two kinds of posts. The first kind will provide solutions to the unique problems faced during data discovery, prototyping and production of ML-powered applications in practice. The second kind will fathom the depths of Math and Science behind a few machine learning algorithms and concepts, to provide those answers which are found only through extensive research or in the original publication/ source code of the algorithms. These posts will be elaborate and technically sound but will have a cohesive narrative layered with three-act structure and visual imagery to enhance your understanding. 
+The data science category will have two kinds of posts. The first kind will provide solutions to some of the unique problems faced during data discovery, prototyping and production of ML-powered applications in practice. The second kind will fathom the depths of Math and Science behind a few machine learning algorithms and concepts, to provide those answers which are found only through extensive research or in the original publication/ source code of the algorithms. These posts will be elaborate and technically sound but will have a cohesive narrative layered with three-act structure and visual imagery to enhance your understanding. 
 
 All in all, the data science posts on Data Sapien will provide you with information which cannot be found with a straight-forward Google or Stackoverflow search, differentiating them from the ocean of Data Science and ML content available on the internet. The posts are sub-categorised further to aid navigation.
 <br>

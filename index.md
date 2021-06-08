@@ -244,18 +244,6 @@ function showSlides2(n) {
 </script>
 
 
-<!-- <br>
-<h3>Trending</h3>
-<ul class="post-list"><li><span class="post-meta">Dec 18, 2020</span>
-        <h3>
-          <a class="post-link" href="/running-your-first-business/">
-            Running Your First Business
-          </a>
-        </h3></li>
-</ul>
-<br>
-
-<!-- --- -->
 <br>
 <h3>Explore the posts</h3>
 <div class="row"> 
