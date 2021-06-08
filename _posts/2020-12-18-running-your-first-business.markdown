@@ -2,14 +2,14 @@
 layout: post
 title:  "Running Your First Business"
 date:   2020-12-18 10:09:13 +0530
-categories: jekyll update
+categories: book
 permalink: /running-your-first-business/
 tags: productivity accountability
 <!-- comments: false -->
 ---
 <h3>Prologue</h3>
 
-Imagine a person who is an alumnus of a reputed university with a well-paying job. Based on these two achievements, the world around him/her considers them successful. In reality, this person is a big-time procrastinator but has an ability to finish the job in the nick of time. Hence, his/her procrastination has never been in question so far. 
+Imagine a person who is an alumnus of a reputed university with a well-paying job. Based on these two achievements, the world considers them successful. In reality, this person is a big-time procrastinator but has an ability to finish the job in the nick of time. Hence, the procrastination has never been in question so far. 
 
 But this person is aware that lacking respect towards time would invite troubles some day. He/she has a belief that if they are already good in finishing jobs by spending little time, this good shall become great by spending a little more. But complaceny has taken them over to make any amends. As months pass by, they notice that life isn't as full-filling as it used to be, as they begin to succumb to boredom. 
 

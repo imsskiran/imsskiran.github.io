@@ -46,7 +46,9 @@ permalink: /data-science/
 <h2 class="post-list-heading">Data Science</h2>
 ---
 <br>
-There is an ocean of content on the concepts from Data Science and AI on the internet. What gets published here is the knowledge and perspectives gained from our experience of leaning and applying these concepts, by living up to the objective of Data Sapien. More importantly, we aim to publish content on some of the untouched topics that are not easily found with a straight-forward Stackoverflow or Google search. These untouched topics are the problems that we face while working on devising an ML-powered framework to solve a real-world problem. Hence, this category is generally more suited for interns or working professionals who are familiar with basics of Python programming, Statistics, Machine Learning and ML engineering. With that being said, we will always mention the road to learning the prerequisites for understand our posts.
+The data science category will have two kinds of posts. The first kind will provide solutions to the unique problems faced during data discovery, prototyping and production of ML-powered applications in practice. The second kind will fathom the depths of Math and Science behind a few machine learning algorithms and concepts, to provide those answers which are found only through extensive research or in the original publication/ source code of the algorithms. These posts will be elaborate and technically sound but will have a cohesive narrative layered with three-act structure and visual imagery to enhance your understanding. 
+
+All in all, the data science posts on Data Sapien will provide you with information which cannot be found with a straight-forward Google or Stackoverflow search, differentiating them from the ocean of Data Science and ML content available on the internet. The posts are sub-categorised further to aid navigation.
 <br>
 <h2>Browse through sub-categories</h2>
 ---
