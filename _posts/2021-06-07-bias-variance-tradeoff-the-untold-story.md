@@ -7,11 +7,11 @@ published: true
 hidden: true
 upcoming: true
 ---
-The bias-variance trade-off is a foundational concept omnipresent in the machine learning curricullums. In many such foundational courses, it is explained as an interpretation of the relationship between a model's complexity and the difference between its training and validation errors. However, without the background of Estimation Theory, this widely applied concept is often misinterpreted in practice. Hence, in this post let's look at the math behind the bias, the variance and their relationship with the expected error of a model from the first principles.
+The bias-variance trade-off is a foundational concept omnipresent in the machine learning curricullums. In many such foundational courses, it is explained as an interpretation of the relationship between a model's complexity and the difference between its training and validation errors. However, without the background of Estimation Theory, this widely applied concept is often misinterpreted in practice. Hence, in this post let's understand the rationale behind a trade-off between bias and variance and its effect on the expected error of a model, from the first principles.
 
 - Insert the cover pic here-
 
-<h2>The Estimaton</h2>
+<h2>Estimaton Theory Primer</h2>
 
 Imagine that you are interested to compute the simple average of scores made by an active sportsperson in their career. As the player is still active, you would only have a subset of the enitre scores ever made until the player's retirement. So, you wanted to guess the true average using the set of scores available thus far, deeming it reasonable.
 
@@ -47,8 +47,17 @@ Now, if you could come up with multiple estimators, how to select the best among
 * Has the lowest variance among all unbiased estimators
 * Unique
 
-Unbiased estimator will have its expected value matching with true value. The unbiased estimator with lowest variance will have its estimates close to each and hence close to the expected value, indicating that you are guessing accurately on an average and all your guesses are not too far from the true value. 
+Unbiased estimator will have its expected value matching with the true value. The unbiased estimator with lowest variance will have its estimates close to each other, and thus close to the expected value, indicating that you are guessing accurately on an average and all your guesses are not too far from the true value. 
 
-So the model with highest accuracy shall have apparently no bias and small variance. But then why is there a bias-variance trade-off?
+So the model with highest accuracy shall have no bias and little variance. But then why is there a bias-variance trade-off? The mathematical equation representing the relationship between the expected error, bias and variane demonstrates why there needs to be a trade-off.
 
 <h2>The trade-off</h2>
+Given a formulation y = f(X) + e, the squared sum of residuals will be:
+
+The expected error is a function of bias-square and variance, which are both non-negative. Reduction in either leads to the reduction in the error. In many situations, the bias and variance will be both non-zero. Hence, the trade-off happens in the process of chosing the model with smallest error, even if it has a higher-bias-lower-variance or lower-bias-higher-variance.
+
+<!-- A simpler model may not generalise well with the given sample
+
+Hence, among a set of many models, the one with slightly lower bias and higher variance or vice-versa can have the smallest error. That's the reason behind the trade-off between bias and variance in order to choose the best performing model. -->
+
+The comparison between a Lasso regression, Linear  to connect the dots between bias, variance, underfitting and overfitting 
