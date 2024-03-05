@@ -115,7 +115,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   <img src="/assets/logo_chop.png" style="width:100%">
   <!-- <div class="text">Welcome</div> -->
 </div></a>
-<a href="/running-your-first-business/">
+<a href="">
 <div class="mySlides fade">
   <div class="numbertext">New</div>
   <img src="/assets/stock_images/ryfb/thumbnail.png" style="width:100%">
